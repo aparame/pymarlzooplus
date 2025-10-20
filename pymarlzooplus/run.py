@@ -5,7 +5,7 @@ import time
 import threading
 import torch as th
 from types import SimpleNamespace as SN
-from pymarlzooplus.utils._logging import Logger
+from pymarlzooplus.utils.logging_setup import Logger
 from pymarlzooplus.utils.timehelper import time_left, time_str
 from os.path import dirname, abspath
 
@@ -35,27 +35,30 @@ def run(_run, _config, _log):
     assert file_storage_observer_idx > -1, "File storage observer is not defined!"
     results_dir = _run.observers[file_storage_observer_idx].dir
 
+    # setup loggers
+    logger = Logger(_log)
+    _log.info("Saving to FileStorageObserver in '{}'".format(results_dir))
+
     # check args sanity
     _config = args_sanity_check(_config, _log)
 
+    # Get arguments from config
     args = SN(**_config)
     args.device = "cuda" if args.use_cuda else "cpu"
     args.device_cnn_modules = "cuda" if args.use_cuda_cnn_modules else "cpu"
     args.results_path = results_dir
 
-    # setup loggers
-    logger = Logger(_log)
-
+    # Print out config
     _log.info("Experiment Parameters:")
     experiment_params = pprint.pformat(_config, indent=4, width=1)
-    _log.info("\n\n" + experiment_params + "\n")
+    _log.info(experiment_params + "\n")
 
+    # Create a unique token for this experiment to use it in tensorboard dir name
     try:
         map_name = _config["env_args"]["map_name"]
     except:
         map_name = _config["env_args"]["key"]
     unique_token = f"{_config['name']}_seed{_config['seed']}_{map_name}_{datetime.datetime.now()}"
-
     args.unique_token = unique_token
     if args.use_tensorboard:
         tb_logs_direc = os.path.join(
@@ -74,23 +77,23 @@ def run(_run, _config, _log):
     time.sleep(10)
 
     # Plot results
-    print("Creating plots ...")
+    _log.info("Creating plots ...")
     plot_single_experiment_results(results_dir, algo_name=_config['name'], env_name=map_name)
 
     # Clean up after finishing
-    print("Exiting Main")
+    _log.info("Exiting Main")
 
-    print("Stopping all threads")
+    _log.info("Stopping all threads")
     for t in threading.enumerate():
         if t.name != "MainThread":
-            print("Thread {} is alive! Is daemon: {}".format(t.name, t.daemon))
+            _log.info("Thread {} is alive! Is daemon: {}".format(t.name, t.daemon))
             t.join(timeout=2)
             if t.is_alive():
-                print(f"Thread {t.name} did not terminate.")
+                _log.info(f"Thread {t.name} did not terminate.")
             else:
-                print(f"Thread {t.name} has joined successfully.")
+                _log.info(f"Thread {t.name} has joined successfully.")
 
-    print("Exiting script")
+    _log.info("Exiting script")
 
 
 def evaluate_sequential(args, runner):

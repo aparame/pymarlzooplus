@@ -8,15 +8,14 @@ import yaml
 
 from sacred import Experiment, SETTINGS
 from sacred.observers import FileStorageObserver
-from sacred.utils import apply_backspaces_and_linefeeds
 import numpy as np
 import torch as th
 
-from pymarlzooplus.utils._logging import get_logger
+from pymarlzooplus.utils.logging_setup import get_logger, captured_filter
 from pymarlzooplus.run import run
 
 SETTINGS['CAPTURE_MODE'] = "fd"  # set to "no" if you want to see stdout/stderr in the console
-logger = get_logger()
+logger = get_logger(name="pymarlzooplus")
 
 
 def generate_seed():
@@ -161,33 +160,36 @@ def pymarlzooplus(params):
             # Parameters from the command line override the default ones and the ones from the config file
             config_dict = recursive_dict_update(config_dict, algo_params)
 
+        # Define the map name for logging
         try:
             map_name = config_dict["env_args"]["map_name"]
         except:
             map_name = config_dict["env_args"]["key"]
-
-        # Create a fresh Sacred experiment
-        ex = Experiment("pymarlzooplus")
-        ex.logger = logger
-        ex.captured_out_filter = apply_backspaces_and_linefeeds
-
-        # now add all the config to sacred
-        ex.add_config(config_dict)
-
         for param in params:
             if param.startswith("env_args.map_name"):
                 map_name = param.split("=")[1]
             elif param.startswith("env_args.key"):
                 map_name = param.split("=")[1]
 
-        # Save to disk by default for sacred
-        logger.info("Saving to FileStorageObserver in results/sacred.")
+        # Create a fresh Sacred experiment
+        ex = Experiment("pymarlzooplus")
+        ex.logger = logger
+        ex.captured_out_filter = captured_filter
+
+        # now add all the config to sacred
+        ex.add_config(config_dict)
+
+        # Create the observer
         results_path = os.path.join(get_caller_path(), "results")
         file_obs_path = os.path.join(results_path, "sacred", f"{config_dict['name']}", f"{map_name}")
+        ex.observers = [(FileStorageObserver(file_obs_path, copy_sources=False))]
 
-        ex.observers = [(FileStorageObserver(file_obs_path))]
+        # Define the main function to run
         ex.main(my_main)
+
+        # Run it
         ex.run_commandline(params)
+
     except Exception as e:
         raise RuntimeError(f"pymarlzooplus failed with error:\n{e}") from e
 

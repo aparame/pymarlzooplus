@@ -68,11 +68,16 @@ series = {AAMAS '25}
 - [Environment API](#environment-api)
 - [Run a hyperparameter search](#run-a-hyperparameter-search)
 - [Saving and loading learnt models](#saving-and-loading-learnt-models)
+- [Known issues](#known-issues)
+- [Issues](#issues)
+- [Future work](#future-work)
 - [Citing PyMARLzoo+, PyMARL, and EPyMARL](#citing-pymarlzoo-epymarl-and-pymarl)
 - [License](#license)
 
 
 # Installation
+
+## Install locally
 Before installing PyMARLzoo+, we recommend creating a conda environment:
 
 ```sh
@@ -93,41 +98,13 @@ conda activate pymarlzooplus
   pip install -e .
   ``` 
 
-**Known issues**:
-- Before running an atari environment (from PettingZoo) for the first time, you have to run: 
+Note that before running an atari environment (from PettingZoo) for the first time, you have to run: 
   ```sh
   AutoROM -y
   ```
-- Installation error for ``box2d-py``, run:
-  ```sh
-  sudo apt-get install swig
-  ```
-- In case you get `ImportError: Library "GLU" not found.`, run: 
-  ```sh
-  sudo apt-get install python3-opengl
-  ```
-- In case you get `IndexError: list index out of range` for pyglet in a non-headless machine using `render=True`, 
-set `__GLX_VENDOR_LIBRARY_NAME=nvidia` and `__NV_PRIME_RENDER_OFFLOAD=1` as environment variables. 
-  
-  For example, if you want to run your own file `example.py` , run:
-  ```sh
-  __GLX_VENDOR_LIBRARY_NAME=nvidia __NV_PRIME_RENDER_OFFLOAD=1 python example.py
-  ```
-- In case you get `ERROR: Failed building wheel for multi-agent-ale-py`, probably the problem is with the compiler (if `cmake` is already installed), so run:
-    ```sh
-    sudo apt-get install g++-9 gcc-9
-    export CC=gcc-9 CXX=g++-9
-    ```
-- In case you get `SystemError: ffi_prep_closure(): bad user_data (it seems that the version of the libffi library seen at runtime is different from the 'ffi.h' file seen at compile-time)`, probably for `"waterworld_v4"` of PettingZoo, run:
-  ```sh
-  pip install --upgrade --force-reinstall pymunk cffi
-  ```
-- In case you get `ImportError: ../bin/../lib/libstdc++.so.6: 'version GLIBCXX_3.4.32' not found`, run:
- 
-```sh
-  conda install -c conda-forge libstdcxx-ng
-```
-# Docker
+
+
+## Using Docker
 The docker image is available at [Docker Hub](https://hub.docker.com/r/AILabDsUnipi/pymarlzooplus).
 ### How to use the Docker image
 Pull the image from Docker Hub with the following command:
@@ -150,7 +127,9 @@ docker exec -it $(docker ps | awk 'NR > 1 {print $1}') /bin/bash
 ```
 
 # Run training
- 
+
+<img src="https://raw.githubusercontent.com/AILabDsUnipi/pymarlzooplus/main/images/terminal_example.gif" alt="logo" align="center" width="60%"/>
+
 In the following instructions, ```<algo>``` (or ```"algo"```) can be replaced with one of the following algoriths:  
 - "coma"
 - "qmix"
@@ -653,17 +632,21 @@ In the file [pymarlzooplus/scripts/api_script.py](pymarlzooplus/scripts/api_scri
 
 For a description of each environment's arguments, please see the corresponding config file in [pymarlzooplus/config/envs](pymarlzooplus/config/envs). 
 
+
+
 # Run a hyperparameter search
 
-We include a script named [search.py](pymarlzooplus/search.py) which reads a search configuration file (e.g. the included [search.config.example.yaml](pymarlzooplus/search.config.example.yaml)) and runs a hyperparameter search in one or more tasks. The script can be run using
+We include a script named [search.py](pymarlzooplus/search.py) which reads a search configuration file (e.g. the included [search.config.example.yaml](pymarlzooplus/config/search.config.example.yaml)) and runs a hyperparameter search in one or more tasks. The script can be run using:
 ```shell
-python search.py run --config=search.config.example.yaml --seeds 5 locally
+python pymarlzooplus/search.py run --config=pymarlzooplus/config/search.config.example.yaml --seeds 5 locally
 ```
 In a cluster environment where one run should go to a single process, it can also be called in a batch script like:
 ```shell
-python search.py run --config=search.config.example.yaml --seeds 5 single 1
+python pymarlzooplus/search.py run --config=pymarlzooplus/config/search.config.example.yaml --seeds 5 single 1
 ```
-where the 1 is an index to the particular hyperparameter configuration and can take values from 1 to the number of different combinations.
+where `1` is an index to the particular hyperparameter configuration and can take values from 1 to the number of different combinations.
+
+
 
 # Saving and loading learnt models
 
@@ -674,6 +657,70 @@ You can save the learnt models to disk by setting `save_model = True`, which is 
 ## Loading models
 
 Learnt models can be loaded using the `checkpoint_path` parameter, after which the learning will proceed from the corresponding timestep. 
+
+
+
+# Known issues
+- Installation error for ``box2d-py``, run:
+  ```sh
+  sudo apt-get install swig
+  ```
+- In case you get `ImportError: Library "GLU" not found.`, run: 
+  ```sh
+  sudo apt-get install python3-opengl
+  ```
+- In case you get `IndexError: list index out of range` for pyglet in a non-headless machine using `render=True`, 
+set `__GLX_VENDOR_LIBRARY_NAME=nvidia` and `__NV_PRIME_RENDER_OFFLOAD=1` as environment variables. 
+  
+  For example, if you want to run your own file `example.py` , run:
+  ```sh
+  __GLX_VENDOR_LIBRARY_NAME=nvidia __NV_PRIME_RENDER_OFFLOAD=1 python example.py
+  ```
+- In case you get `ERROR: Failed building wheel for multi-agent-ale-py`, probably the problem is with the compiler (if `cmake` is already installed), so run:
+    ```sh
+    sudo apt-get install g++-9 gcc-9
+    export CC=gcc-9 CXX=g++-9
+    ```
+- In case you get `SystemError: ffi_prep_closure(): bad user_data (it seems that the version of the libffi library seen at runtime is different from the 'ffi.h' file seen at compile-time)`, probably for `"waterworld_v4"` of PettingZoo, run:
+  ```sh
+  pip install --upgrade --force-reinstall pymunk cffi
+  ```
+- In case you get `ImportError: ../bin/../lib/libstdc++.so.6: 'version GLIBCXX_3.4.32' not found`, run:
+  ```sh
+  conda install -c conda-forge libstdcxx-ng
+  ```
+
+
+
+# Issues
+
+If you encounter a bug, have a feature request, or any other questions about the project, we encourage you to open an issue. Please follow these steps:
+
+1. **Visit the Issues Tab:** Navigate to the [Issues](https://github.com/AILabDsUnipi/pymarlzooplus/issues) section of our repository.
+2. **Click on "New Issue":** Start a new issue by clicking the "New Issue" button.
+3. **Choose the Correct Label:** Select the one that best fits your situation (e.g. bug, question, help needed).
+4. **Provide Details:** Include a clear title and a detailed description. For bugs, please describe the steps to reproduce the issue, the expected behavior, and any relevant system information.
+5. **Submit the Issue:** Once you've provided all necessary details, click the "Submit new issue" button.
+
+Thank you for contributing to the project and helping us improve!
+
+
+
+# Future Work
+- [ ] Add support for raw image input in algorithms: 
+  - CDS
+  - MASER
+  - EMC
+  - EOI
+  - MAT_DEC
+  - HAPPO
+  - QPLEX
+  - MAVEN
+  - CommFormer
+- [ ] Docstrings for all code
+- [ ] Make the code to be more abstract and modular
+
+
 
 # Citing PyMARLzoo+, EPyMARL and PyMARL
 
@@ -721,32 +768,7 @@ In BibTeX format:
   year = {2019},
 }
 ```
-# Issues
 
-If you encounter a bug, have a feature request, or any other questions about the project, we encourage you to open an issue. Please follow these steps:
-
-1. **Visit the Issues Tab:** Navigate to the [Issues](https://github.com/AILabDsUnipi/pymarlzooplus/issues) section of our repository.
-2. **Click on "New Issue":** Start a new issue by clicking the "New Issue" button.
-3. **Choose the Correct Label:** Select the one that best fits your situation (e.g. bug, question, help needed).
-4. **Provide Details:** Include a clear title and a detailed description. For bugs, please describe the steps to reproduce the issue, the expected behavior, and any relevant system information.
-5. **Submit the Issue:** Once you've provided all necessary details, click the "Submit new issue" button.
-
-Thank you for contributing to the project and helping us improve!
-
-# Future Work
-- [ ] Debug testing for multithreading algorithms
-- [ ] Add support for raw image input in algorithms: 
-  - CDS
-  - MASER
-  - EMC
-  - EOI
-  - MAT_DEC
-  - HAPPO
-  - QPLEX
-  - MAVEN
-  - CommFormer
-- [ ] Docstrings for all code
-- [ ] Make the code to be more abstract and modular
 
 
 # License
