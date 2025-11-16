@@ -1,5 +1,5 @@
 .idea/
-**/results/
+results/
 **/__pycache__/
 **/overcooked_ai.egg-info/
 **/pressureplate.egg-info/

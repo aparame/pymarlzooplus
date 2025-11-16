@@ -23,6 +23,10 @@ PREDEFINED_MAP_ALGO_COLORS = {
     'MASER': '#C71585',  # Medium violet red (stronger than light red)
     'EMC': '#A9A9A9',  # Dark gray (more visible than light gray)
     'CDS': '#964B00',  # Brown
+    'MAVEN': '#FF69B4',  # Pink
+    'CommFormer': '#008000',  # Green
+    'IQL': '#FF8C00',  # Dark orange
+
 }
 
 def _plot_custom_legend():
@@ -1023,6 +1027,10 @@ def plot_mode(mode: str, config_path: str, config_data: dict):
         elif mode == 'average':
             print(f"Running in 'average' mode with config: {config_path}")
             plot_average_per_algo_for_all_tasks_of_a_benchmark(**config_data)
+        else:
+            print(f"Error: Unknown mode '{mode}'. Choose from 'single', 'multiple', or 'average'.",
+                  file=sys.stderr)
+            sys.exit(1)
 
     except TypeError as e:
         print(f"Error: Mismatch between config file keys and function arguments for mode '{mode}'.",

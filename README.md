@@ -681,15 +681,20 @@ Run plots from the `pymarlzooplus` root directory.
    ```bash
    python utils/plot_utils.py single --config config/plots/single.yaml
    ```
+<img src="https://raw.githubusercontent.com/AILabDsUnipi/pymarlzooplus/main/images/single_plot.jpg" alt="single plot"  align="center" width="40%"/>
+
 2. **Multiple Experiments Plot:**
    ```bash
     python utils/plot_utils.py multiple --config config/plots/multiple.yaml
     ```
+
+  <img src="https://raw.githubusercontent.com/AILabDsUnipi/pymarlzooplus/main/images/multiple_plot.jpg" alt="multiple plot"  align="center" width="40%"/>
+
 3. **Average Across Environments:**
     ```bash
     python utils/plot_utils.py average --config config/plots/average.yaml
     ```
-
+<img src="https://raw.githubusercontent.com/AILabDsUnipi/pymarlzooplus/main/images/avg_plot.jpg" alt="avg plot"  align="center" width="40%"/>
 
 # Saving and loading learnt models
 
