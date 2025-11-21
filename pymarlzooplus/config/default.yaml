@@ -61,8 +61,8 @@ hypergroup: null
 # --- Weights & Biases (wandb) logging ---
 wandb:
   enable: True # Enable W&B logging
-  project: "VLCM_Phase1" # W&B project name
-  entity: i2rLAB # W&B entity/user (optional)
+  project: "add-project-name" # W&B project name
+  entity: "add-team-name" # W&B entity/user (optional)
   run_name: null # If null, a unique token will be used
   notes: "" # Optional notes/description for the run
   tags: [] # Optional list of tags
