@@ -2,13 +2,11 @@ exclude: null
 grid-search:
 
   "--config":
-    - "iql"
-    - "iql_ns"
+    - "qplex"
+    - "maa2c"
 
   lr:
     - 0.0001
-    - 0.0003
-    - 0.0005
 
   standardise_rewards:
     - True
@@ -16,45 +14,40 @@ grid-search:
   use_rnn:
     - False
 
-  target_update_interval_or_tau:
-    - 200
-    - 0.01
-
   hidden_dim:
     - 64
-    - 128
-
-  evaluation_epsilon:
-    - 0.0
-    - 0.05
-
-  epsilon_anneal_time:
-    - 50000
-    - 200000
 
   t_max:
-    - 2050000
-  test_nepisode:
     - 100
+  test_nepisode:
+    - 10
   test_interval:
-    - 25000
+    - 100
   log_interval:
-    - 25000
+    - 100
   save_model_interval:
-    - 50000
+    - 1000000
   save_model:
     - false
+  batch_size:
+    1
+  buffer_size:
+    1
     
 grid-search-groups:
   env0:
-    - "--env-config": "gymma"
-    - env_args.key: lbforaging:Foraging-4s-11x11-3p-2f-coop-v2
+    - "--env-config": "pettingzoo"
+    - env_args.key: pistonball_v6
+    - env_args.time_limit: 25
+  env1:
+    - "--env-config": "pettingzoo"
+    - env_args.key: cooperative_pong_v5
     - env_args.time_limit: 25
 
 plotting:
   base_sacred_path: "./results/sacred"
   base_save_path: "./results/multiple-exps-plots"
-  env_name: "lbforaging:Foraging-4s-11x11-3p-2f-coop-v2"
+  env_name: "pettingzoo"
   plot_train: false
   plot_legend_bool: true
   algorithm_legend_map:

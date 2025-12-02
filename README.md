@@ -646,7 +646,55 @@ python pymarlzooplus/search.py run --config=pymarlzooplus/config/search.config.e
 ```
 where `1` is an index to the particular hyperparameter configuration and can take values from 1 to the number of different combinations.
 
+# 📈 Generating Plots
 
+To visualize experiment results, use the `utils/plot_utils.py` . Plots are defined by YAML configs in `pymarlzooplus/config/plots/`.
+
+---
+
+### Usage
+
+Run plots from the `pymarlzooplus` root directory.
+
+**Command:**
+```bash
+python utils/plot_utils.py <mode> --config <path_to_config.yaml>
+```
+
+**Modes:**
+- `single`: Plot a single experiment.
+- `multiple`: Aggregates multiple seeds/algorithms for one environment.
+- `average`: Averages results across multiple environments (using .pkl files from multiple mode).
+
+**Configuration**
+
+- Configs are stored in `config/plots/`.
+ If `--config` is omitted, a default is used based on the mode:
+  - `single` -> [config/plots/single.yaml](/pymarlzooplus/config/plots/single.yaml)
+  - `multiple` -> [config/plots/multiple.yaml](/pymarlzooplus/config/plots/multiple.yaml)
+  - `average` -> [config/plots/average.yaml](/pymarlzooplus/config/plots/average.yaml)
+- Use `~` for your home directory in paths (e.g., `~/results/sacred/...`).
+
+### Example Usage
+Run plots from the `pymarlzooplus` root directory.
+1. **Single Experiment Plot:**
+   ```bash
+   python utils/plot_utils.py single --config config/plots/single.yaml
+   ```
+<img src="https://raw.githubusercontent.com/AILabDsUnipi/pymarlzooplus/main/images/single_plot.jpg" alt="single plot"  align="center" width="40%"/>
+
+2. **Multiple Experiments Plot:**
+   ```bash
+    python utils/plot_utils.py multiple --config config/plots/multiple.yaml
+    ```
+
+  <img src="https://raw.githubusercontent.com/AILabDsUnipi/pymarlzooplus/main/images/multiple_plot.jpg" alt="multiple plot"  align="center" width="40%"/>
+
+3. **Average Across Environments:**
+    ```bash
+    python utils/plot_utils.py average --config config/plots/average.yaml
+    ```
+<img src="https://raw.githubusercontent.com/AILabDsUnipi/pymarlzooplus/main/images/avg_plot.jpg" alt="avg plot"  align="center" width="40%"/>
 
 # Saving and loading learnt models
 
