@@ -79,6 +79,8 @@ def _get_config(params, arg_name, subfolder):
                     break
 
         return config_dict
+    
+    return {}
 
 
 def recursive_dict_update(d, u):
@@ -138,6 +140,43 @@ def format_params(params_dict):
 def pymarlzooplus(params):
     try:
         algo_params = None
+        
+        # Parse custom arguments for inference mode
+        inference_mode = False
+        run_number = None
+        fps = None
+        
+        if isinstance(params, list):
+            new_params = []
+            i = 0
+            while i < len(params):
+                p = params[i]
+                if p == "--inference":
+                    inference_mode = True
+                    i += 1
+                    continue
+                if p.startswith("--run_number="):
+                    run_number = p.split("=")[1]
+                    i += 1
+                    continue
+                if p == "--run_number":
+                    if i + 1 < len(params):
+                        run_number = params[i+1]
+                        i += 2
+                        continue
+                if p.startswith("--fps="):
+                    fps = float(p.split("=")[1])
+                    i += 1
+                    continue
+                if p == "--fps":
+                    if i + 1 < len(params):
+                        fps = float(params[i+1])
+                        i += 2
+                        continue
+                new_params.append(p)
+                i += 1
+            params = new_params
+
         if isinstance(params, dict):
             params, algo_params = format_params(params)
             params = ["pymarlzooplus/main.py"] + params[:]
@@ -170,6 +209,44 @@ def pymarlzooplus(params):
                 map_name = param.split("=")[1]
             elif param.startswith("env_args.key"):
                 map_name = param.split("=")[1]
+
+        # --- INFERENCE MODE LOGIC ---
+        if inference_mode:
+            if run_number is None:
+                raise ValueError("When using --inference, you must specify --run_number=<int>")
+            
+            # Construct checkpoint path
+            # Structure: results/sacred/<algo_name>/<map_name>/<run_number>/models
+            # We assume 'results' is relative to the current working directory or script location.
+            # Based on default.yaml local_results_path: "results"
+            
+            # Use absolute path to be safe, based on where main.py is or CWD?
+            # existing code uses os.path.join(get_caller_path(), "results") for observer
+            # We will follow similar logic or just use relative "results" if that's how it's usually run.
+            # The user example showed full path in comment, but relative in description.
+            # Let's try to find the results dir relative to this script's parent (pymarlzooplus root)
+            
+            base_results_path = os.path.join(dirname(abspath(__file__)), "results", "sacred")
+            algo_name = config_dict['name']
+            
+            checkpoint_path = os.path.join(base_results_path, algo_name, map_name, str(run_number), "models")
+            
+            print(f"Inference mode enabled. Loading checkpoint from: {checkpoint_path}")
+            
+            # Override config
+            config_dict["save_model"] = False
+            config_dict["evaluate"] = True
+            config_dict["render"] = True
+            config_dict["checkpoint_path"] = checkpoint_path
+            
+            if fps is not None:
+                config_dict["fps"] = fps
+            
+            # Disable wandb
+            if "wandb" not in config_dict:
+                config_dict["wandb"] = {}
+            config_dict["wandb"]["enable"] = False
+        # ----------------------------
 
         # Create a fresh Sacred experiment
         ex = Experiment("pymarlzooplus")

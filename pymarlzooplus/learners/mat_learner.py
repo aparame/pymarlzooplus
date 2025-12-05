@@ -340,3 +340,25 @@ class MATLearner:
 
     def cuda(self):
         self.mac.agent.cuda()
+
+    def save_models(self, path):
+        """
+        Save the actor-critic models to disk.
+        :param path: (str) path to save the models.
+        """
+        th.save(self.mac.agent.state_dict(), "{}/agent.th".format(path))
+        th.save(self.critic.state_dict(), "{}/critic.th".format(path))
+        th.save(self.optimizer.state_dict(), "{}/optimizer.th".format(path))
+        if self.value_normalizer is not None:
+            th.save(self.value_normalizer.state_dict(), "{}/value_normalizer.th".format(path))
+
+    def load_models(self, path):
+        """
+        Load the actor-critic models from disk.
+        :param path: (str) path to load the models from.
+        """
+        self.mac.agent.load_state_dict(th.load("{}/agent.th".format(path), map_location=lambda storage, loc: storage))
+        self.critic.load_state_dict(th.load("{}/critic.th".format(path), map_location=lambda storage, loc: storage))
+        self.optimizer.load_state_dict(th.load("{}/optimizer.th".format(path), map_location=lambda storage, loc: storage))
+        if self.value_normalizer is not None:
+            self.value_normalizer.load_state_dict(th.load("{}/value_normalizer.th".format(path), map_location=lambda storage, loc: storage))

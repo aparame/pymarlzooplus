@@ -1,4 +1,5 @@
 import datetime
+import time
 from functools import partial
 import numpy as np
 
@@ -126,6 +127,8 @@ class EpisodeRunner:
             # Render
             if test_mode and self.args.render:
                 self.env.render()
+                if hasattr(self.args, 'fps') and self.args.fps is not None:
+                    time.sleep(1.0 / self.args.fps)
 
             ## Print info
             # Get info from environment to be printed
