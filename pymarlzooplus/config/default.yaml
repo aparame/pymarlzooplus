@@ -62,9 +62,15 @@ hypergroup: null
 # --- Weights & Biases (wandb) logging ---
 wandb:
   enable: True # Enable W&B logging
+<<<<<<< HEAD
   project: "VLCM_Phase1" # W&B project name
   entity: "i2rLAB" # W&B entity/user (optional)
   run_name: null # If null, a token based on the env and algorithm will be used
+=======
+  project: "add-project-name" # W&B project name
+  entity: "add-team-name" # W&B entity/user (optional)
+  run_name: null # If null, a unique token will be used
+>>>>>>> 83fbcd9 (added wandb integration with changes to default.yaml)
   notes: "" # Optional notes/description for the run
   tags: [] # Optional list of tags
   save_dir: "results/wandb" # Directory where W&B will store run files (overrides wandb default dir)
