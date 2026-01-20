@@ -1,0 +1,8 @@
+paths_to_pickle_results:
+  - "results/multiple-exps-plots/pistonball_v6/all_results_env=Pistonball.pkl"
+  - "results/multiple-exps-plots/cooperative_pong_v5/all_results_env=cooperative_pong_v5.pkl"
+  - "results/multiple-exps-plots/entombed_cooperative_v3/all_results_env=entombed_cooperative_v3.pkl"
+
+plot_title: "PettingZoo"
+path_to_save: "results/multiple-exps-plots/pettingzoo_benchmark/"
+plot_legend_bool: true

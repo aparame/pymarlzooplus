@@ -1,0 +1,12 @@
+paths_to_results:
+  - "results/sacred/coma/pistonball_v6" # Change these to your paths where you have saved the results
+  - "results/sacred/emc/pistonball_v6"
+
+algo_names:
+  - "COMA"
+  - "EMC"
+
+env_name: "pistonball_v6"
+path_to_save: "results/multiple-exps-plots/pistonball_v6/"
+plot_train: false
+plot_legend_bool: true

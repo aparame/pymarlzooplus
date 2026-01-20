@@ -2,7 +2,9 @@ import json
 import os
 import random
 import pickle
-
+import argparse
+import sys
+import yaml
 import matplotlib as mpl
 from matplotlib import pyplot as plt
 import numpy as np
@@ -21,30 +23,24 @@ PREDEFINED_MAP_ALGO_COLORS = {
     'MASER': '#C71585',  # Medium violet red (stronger than light red)
     'EMC': '#A9A9A9',  # Dark gray (more visible than light gray)
     'CDS': '#964B00',  # Brown
+    'MAVEN': '#FF69B4',  # Pink
+    'CommFormer': '#008000',  # Green
+    'IQL': '#FF8C00',  # Dark orange
+
 }
 
-
-def create_only_legend(path_to_save):
-
-    # Create a figure and axis for the legend
-    fig, ax = plt.subplots(figsize=(12, 1))
-    ax.axis('off')  # Turn off axis
-
-    # Create a list of patches to add to the legend
+def _plot_custom_legend():
+    """
+    Helper function to create and plot the predefined horizontal MARL legend
+    below the current figure.
+    """
     patches = [
-        plt.Line2D([0], [0], color=color, marker='o', markersize=15, label=algo, linestyle='None', markeredgewidth=1.5)
+        plt.Line2D([0], [0], color=color, marker='o', markersize=10, label=algo, linestyle='None',
+                   markeredgewidth=1.5)
         for algo, color in PREDEFINED_MAP_ALGO_COLORS.items()
     ]
-
-    # Add the legend to the plot
-    legend = ax.legend(handles=patches, loc='center', ncol=11, frameon=False, fontsize='large', handletextpad=0.5, columnspacing=1)
-
-    # Save the legend as an image
-    plot_path = os.path.join(path_to_save, "MARL_Legend.png")
-    plt.savefig(plot_path, bbox_inches='tight', dpi=300)
-
-    # Close the plot
-    plt.close()
+    plt.legend(handles=patches, loc='upper center', bbox_to_anchor=(0.5, -0.15),
+               ncol=6, frameon=False, fontsize='small', handletextpad=0.5, columnspacing=1)
 
 
 def base_read_json(json_path):
@@ -516,19 +512,21 @@ def create_multiple_exps_plot(
 
     # Adding legend, save, and close
     plt.figure(1)
-    if plot_legend_bool:
-        plt.legend(handles=legend_lines_fig_1)
     plt.tight_layout()
+    if plot_legend_bool:
+        _plot_custom_legend()
+
     path_to_save_plot = os.path.join(path_to_save, f"return_mean_env={env_name}")
-    plt.savefig(path_to_save_plot)
+    plt.savefig(path_to_save_plot, bbox_inches='tight')
     plt.close()
 
     plt.figure(2)
-    if plot_legend_bool:
-        plt.legend(handles=legend_lines_fig_2)
     plt.tight_layout()
+    if plot_legend_bool:
+        _plot_custom_legend()
+
     path_to_save_plot = os.path.join(path_to_save, f"normalized_return_mean_env={env_name}")
-    plt.savefig(path_to_save_plot)
+    plt.savefig(path_to_save_plot, bbox_inches='tight')
     plt.close()
 
     # Resetting the following parameters to their default values
@@ -992,16 +990,15 @@ def plot_average_per_algo_for_all_tasks_of_a_benchmark(
         # Add the lines for the figure
         legend_lines_fig.extend([_line])
 
-    # Adding legend
-    if plot_legend_bool:
-        plt.legend(handles=legend_lines_fig)
     plt.tight_layout()
+    if plot_legend_bool:
+        _plot_custom_legend()
 
     # Save and close
     if os.path.exists(path_to_save) is False:
         os.makedirs(path_to_save)
     path_to_save_plot = os.path.join(path_to_save, f"benchmark={plot_title}")
-    plt.savefig(path_to_save_plot)
+    plt.savefig(path_to_save_plot, bbox_inches='tight')
     plt.close()
 
     # Resetting the following parameters to their default values
@@ -1011,63 +1008,97 @@ def plot_average_per_algo_for_all_tasks_of_a_benchmark(
     print("\nAverage plots created successfully! "
           f"\nSaved at: {path_to_save_plot}")
 
+def plot_mode(mode: str, config_path: str, config_data: dict):
+    """
+    Run the appropriate plotting function based on the selected mode.
+    mode: str, one of 'single', 'multiple', 'average'.
+    config_path: str, path to the config file.
+    config_data: dict, the loaded config data from the YAML file.
+    """
+    try:
+        if mode == 'single':
+            print(f"Running in 'single' mode with config: {config_path}")
+            plot_single_experiment_results(**config_data)
+
+        elif mode == 'multiple':
+            print(f"Running in 'multiple' mode with config: {config_path}")
+            plot_multiple_experiment_results(**config_data)
+
+        elif mode == 'average':
+            print(f"Running in 'average' mode with config: {config_path}")
+            plot_average_per_algo_for_all_tasks_of_a_benchmark(**config_data)
+        else:
+            print(f"Error: Unknown mode '{mode}'. Choose from 'single', 'multiple', or 'average'.",
+                  file=sys.stderr)
+            sys.exit(1)
+
+    except TypeError as e:
+        print(f"Error: Mismatch between config file keys and function arguments for mode '{mode}'.",
+              file=sys.stderr)
+        print(f"Details: {e}", file=sys.stderr)
+        sys.exit(1)
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}", file=sys.stderr)
+        sys.exit(1)
+
+def main():
+    """
+    Main function to parse arguments and run the appropriate plotting function.
+    Usage:
+        python plot_utils.py <mode> --config <config_file.yaml>
+    Modes:
+        'single': Plot results for a single experiment run.
+        'multiple': Plot aggregated results for multiple runs of multiple algorithms.
+        'average': Plot average results across multiple tasks for a benchmark.
+    """
+    parser = argparse.ArgumentParser(description="Run plotting functions for MARL experiments.")
+    parser.add_argument(
+        "mode",
+        choices=['single', 'multiple', 'average'],
+        help=(
+            "The plotting mode to run: \n"
+            "'single': Plot results for a single experiment run.\n"
+            "'multiple': Plot aggregated results for multiple runs of multiple algorithms.\n"
+            "'average': Plot average results across multiple tasks for a benchmark.\n"
+        )
+    )
+    parser.add_argument(
+        "--config",
+        type=str,
+        default=None,
+        help="Path to the YAML config file containing arguments for the chosen mode."
+    )
+
+    args = parser.parse_args()
+    config_path = args.config
+    if config_path is None:
+        default_config_name = f"{args.mode}.yaml"
+        config_path = os.path.join("config", "plots", default_config_name)
+        print(f"No --config specified. Using default: {config_path}")
+
+    config_path = os.path.expanduser(config_path)  # make the ~/file.yaml to /home/user/file.yaml as the full path is needed
+
+    # Read config file
+    try:
+        with open(config_path, 'r') as f:
+            config_data = yaml.safe_load(f)
+    except FileNotFoundError:
+        print(f"Error: Config file not found at {config_path}", file=sys.stderr)
+        sys.exit(1)
+    except yaml.YAMLError as e:
+        print(f"Error: Could not decode YAML from {config_path}", file=sys.stderr)
+        print(f"Details: {e}", file=sys.stderr)
+        sys.exit(1)
+
+    for key, value in config_data.items():
+        if isinstance(value, str) and value.startswith('~/'):
+            config_data[key] = os.path.expanduser(value)
+        elif isinstance(value, list):
+            config_data[key] = [
+                os.path.expanduser(v) if isinstance(v, str) and v.startswith('~/') else v for v in value
+            ]
+
+    plot_mode(args.mode, config_path, config_data)
 
 if __name__ == '__main__':
-
-    ### Examples of plotting
-
-    ## Single algo
-    path_to_results_ = "~/sacred/emc/pistonball_v6/1"
-    algo_name_ = "emc"
-    env_name_ = "pistonball_v6"
-    plot_single_experiment_results(path_to_results_, algo_name_, env_name_)
-
-    ## Many algos
-    paths_to_results_ = [
-        "~/sacred/coma/pistonball_v6",
-        "~/sacred/maa2c/pistonball_v6",
-        "~/sacred/mappo/pistonball_v6",
-        "~/sacred/qmix/pistonball_v6",
-        "~/sacred/eoi/pistonball_v6",
-        "~/sacred/qplex/pistonball_v6",
-        "~/sacred/maser/pistonball_v6",
-        "~/sacred/cds/pistonball_v6",
-        "~/sacred/mat_dec/pistonball_v6",
-        "~/sacred/emc/pistonball_v6",
-        "~/sacred/happo/pistonball_v6"
-    ]
-    algo_names_ = ["COMA", "MAA2C", "MAPPO", "QMIX", "EOI", "QPLEX", "MASER", "CDS", "MAT-DEC", "EMC", "HAPPO"]
-    env_name_ = "Pistonball"
-    path_to_save_ = "~/multiple-exps-plots/pistonball_v6/"
-
-    plot_train_ = False
-    plot_legend_bool_ = False
-    plot_multiple_experiment_results(
-        paths_to_results_,
-        algo_names_,
-        env_name_,
-        path_to_save_,
-        plot_train_,
-        plot_legend_bool_
-    )
-
-    ## Average plots per algo for all tasks of a benchmark
-    _paths_to_pickle_results = [
-        "~/multiple-exps-plots/pistonball_v6/all_results_env=pistonball_v6.pkl",
-        "~/multiple-exps-plots/cooperative_pong_v5/all_results_env=cooperative_pong_v5.pkl",
-        "~/multiple-exps-plots/entombed_cooperative_v3/all_results_env=entombed_cooperative_v3.pkl"
-    ]
-    _plot_title = "PettingZoo"
-    _path_to_save = "~/multiple-exps-plots/pettingzoo/"
-
-    _plot_legend = False
-    plot_average_per_algo_for_all_tasks_of_a_benchmark(
-        _paths_to_pickle_results,
-        _plot_title,
-        _path_to_save,
-        _plot_legend
-    )
-
-    ## Create just a legend
-    _path_to_save = "~/multiple-exps-plots/"
-    create_only_legend(_path_to_save)
+    main()
