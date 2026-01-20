@@ -22,12 +22,13 @@ extra_in_buffer: []
 use_tensorboard: False # Log results to tensorboard
 save_model: True # Save the models to disk
 save_model_interval: 500000 # Save models after this many timesteps
-# checkpoint_path: /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/results/sacred/vdn/rware:rware-tiny-4ag-hard-v2/3/models # Load a checkpoint from this path
-checkpoint_path : ""
-evaluate: False # Evaluate model for test_nepisode episodes and quit (no training)
-render: False # Render the environment when evaluating (only when evaluate == True)
+checkpoint_path: /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/results/sacred/vdn/rware:rware-tiny-4ag-hard-v2/3/models # Load a checkpoint from this path
+# checkpoint_path : ""
+evaluate: True # Evaluate model for test_nepisode episodes and quit (no training)
+render: True # Render the environment when evaluating (only when evaluate == True)
 load_step: 0 # Load model trained on this many timesteps (0 if choose max possible)
 save_replay: False # Saving the replay of the model loaded from checkpoint_path
+save_data: True # Save trajectory data to JSON
 local_results_path: "results" # Path for local results
 
 # --- RL hyperparameters ---
@@ -62,15 +63,9 @@ hypergroup: null
 # --- Weights & Biases (wandb) logging ---
 wandb:
   enable: True # Enable W&B logging
-<<<<<<< HEAD
   project: "VLCM_Phase1" # W&B project name
   entity: "i2rLAB" # W&B entity/user (optional)
   run_name: null # If null, a token based on the env and algorithm will be used
-=======
-  project: "add-project-name" # W&B project name
-  entity: "add-team-name" # W&B entity/user (optional)
-  run_name: null # If null, a unique token will be used
->>>>>>> 83fbcd9 (added wandb integration with changes to default.yaml)
   notes: "" # Optional notes/description for the run
   tags: [] # Optional list of tags
   save_dir: "results/wandb" # Directory where W&B will store run files (overrides wandb default dir)
