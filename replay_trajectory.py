@@ -94,28 +94,37 @@ def render_step(screen, font, metadata, shelves_dict, step_data):
     screen.fill(BG_COLOR)
     h, w = metadata["grid_size"]
 
-    # 1. Update shelf positions based on current step's carrying info & Draw Shelves
-    # We reconstruct a temporary snapshot of shelf locations for THIS step.
-    # THIS IS TRICKY without full history.
-    # Simplification: The provided JSON in episode_runner *only* saves agent state per step.
-    # It does NOT save shelf positions per step.
-    # However, shelves solely move with agents.
-    # To correctly render current shelf positions, we must replay from step 0 to current step?
-    # Or just assume for this visualization we only draw shelves carried by agents?
-    # No, that would hide static shelves.
+    # 1. Draw Cell Backgrounds based on Carrying
+    for agent_info in step_data["agents"]:
+        ax, ay = agent_info["pos"]
 
-    # Let's assume we maintain a persistent state of shelves in the main loop,
-    # but that breaks seeking (random access).
-    # Correct way for robust seeking: Replay from 0.
-    # For now, let's just do sequential replay so we can maintain state.
+        # User Request: "loading toggles black, unloading toggles white"
+        cell_rect = pygame.Rect(ax * CELL_SIZE, ay * CELL_SIZE, CELL_SIZE, CELL_SIZE)
 
+        action = agent_info.get("action", "NOOP")
+        if action == "TOGGLE_UNLOAD":
+            pygame.draw.rect(screen, (255, 255, 255), cell_rect)  # White (Unloading)
+        elif action == "TOGGLE_LOAD":
+            pygame.draw.rect(screen, (0, 0, 0), cell_rect)  # Black (Loading)
+        elif agent_info.get("carrying") is not None:
+            pygame.draw.rect(screen, (0, 0, 0), cell_rect)  # Black (Carrying)
+        else:
+            pygame.draw.rect(screen, (255, 255, 255), cell_rect)  # White (Empty)
+
+    # 2. Draw Grid Lines (on top of backgrounds)
     draw_grid(screen, w, h)
 
-    # Draw Shelves
-    for s_id, pos in shelves_dict.items():
-        # Check if any agent is CURRENTLY carrying this shelf, if so, override position (visually)
-        # Actually, we should update the dict in the main loop to persist drops.
+    # Collect shelves being unloaded to skip drawing them so the cell appears white
+    shelves_to_skip = set()
+    for agent_info in step_data["agents"]:
+        if agent_info.get("action") == "TOGGLE_UNLOAD" and agent_info.get("carrying") is not None:
+            shelves_to_skip.add(str(agent_info["carrying"]))
 
+    # 3. Draw Shelves
+    for s_id, pos in shelves_dict.items():
+        if str(s_id) in shelves_to_skip:
+            continue
+            
         sx, sy = pos
         rect = pygame.Rect(
             sx * CELL_SIZE + 1, sy * CELL_SIZE + 1, CELL_SIZE - 2, CELL_SIZE - 2
@@ -127,9 +136,10 @@ def render_step(screen, font, metadata, shelves_dict, step_data):
         text_rect = text_surf.get_rect(center=rect.center)
         screen.blit(text_surf, text_rect)
 
-    # Draw Agents
+    # 4. Draw Agents
     for agent_info in step_data["agents"]:
         ax, ay = agent_info["pos"]
+
         color_name = agent_info.get("color", "blue")
         # specific fix for "yellow" which might be hard to read on white
         c = pygame.Color(color_name)
