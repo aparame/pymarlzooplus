@@ -1,0 +1,131 @@
+{
+  "artifacts": [],
+  "command": "my_main",
+  "experiment": {
+    "base_dir": "/home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus",
+    "dependencies": [
+      "numpy==1.24.4",
+      "PyYAML==6.0.3",
+      "sacred==0.8.7",
+      "torch==2.4.1"
+    ],
+    "mainfile": "main.py",
+    "name": "pymarlzooplus",
+    "repositories": [
+      {
+        "commit": "82f7b8a4b8cc7469e41bdbfd48a527f7e0457820",
+        "dirty": true,
+        "url": "https://github.com/aparame/pymarlzooplus.git"
+      },
+      {
+        "commit": "82f7b8a4b8cc7469e41bdbfd48a527f7e0457820",
+        "dirty": true,
+        "url": "https://github.com/aparame/pymarlzooplus.git"
+      },
+      {
+        "commit": "82f7b8a4b8cc7469e41bdbfd48a527f7e0457820",
+        "dirty": true,
+        "url": "https://github.com/aparame/pymarlzooplus.git"
+      },
+      {
+        "commit": "82f7b8a4b8cc7469e41bdbfd48a527f7e0457820",
+        "dirty": true,
+        "url": "https://github.com/aparame/pymarlzooplus.git"
+      },
+      {
+        "commit": "82f7b8a4b8cc7469e41bdbfd48a527f7e0457820",
+        "dirty": true,
+        "url": "https://github.com/aparame/pymarlzooplus.git"
+      }
+    ],
+    "sources": [
+      [
+        "__init__.py",
+        "../../../../__init__.py"
+      ],
+      [
+        "main.py",
+        "../../../../main.py"
+      ],
+      [
+        "run.py",
+        "../../../../run.py"
+      ],
+      [
+        "utils/__init__.py",
+        "../../../../utils/__init__.py"
+      ],
+      [
+        "utils/logging_setup.py",
+        "../../../../utils/logging_setup.py"
+      ]
+    ]
+  },
+  "heartbeat": "2025-12-08T22:38:43.284194",
+  "host": {
+    "ENV": {},
+    "cpu": "12th Gen Intel(R) Core(TM) i9-12900KF",
+    "gpus": {
+      "driver_version": "580.95.05",
+      "gpus": [
+        {
+          "model": "NVIDIA GeForce RTX 3080 Ti",
+          "persistence_mode": false,
+          "total_memory": 12288
+        }
+      ]
+    },
+    "hostname": "administrator-Alienware-Aurora-R13",
+    "os": [
+      "Linux",
+      "Linux-5.15.0-163-lowlatency-x86_64-with-glibc2.17"
+    ],
+    "python_version": "3.8.18"
+  },
+  "meta": {
+    "command": "my_main",
+    "config_updates": {
+      "env_args": {
+        "key": "rware:rware-tiny-4ag-hard-v2"
+      },
+      "save_data": true,
+      "t_max": 100
+    },
+    "named_configs": [],
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--id": null,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [
+        "env_args.key=rware:rware-tiny-4ag-hard-v2",
+        "save_data=True",
+        "t_max=100"
+      ],
+      "help": false,
+      "with": true
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2025-12-08T22:37:56.976508",
+  "status": "COMPLETED",
+  "stop_time": "2025-12-08T22:38:41.277260"
+}

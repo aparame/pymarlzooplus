@@ -1,0 +1,23 @@
+2025-11-21 14:33:47,854 INFO    MainThread:33776 [wandb_setup.py:_flush():80] Current SDK version is 0.23.0
+2025-11-21 14:33:47,854 INFO    MainThread:33776 [wandb_setup.py:_flush():80] Configure stats pid to 33776
+2025-11-21 14:33:47,854 INFO    MainThread:33776 [wandb_setup.py:_flush():80] Loading settings from /home/adi2440/.config/wandb/settings
+2025-11-21 14:33:47,854 INFO    MainThread:33776 [wandb_setup.py:_flush():80] Loading settings from /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/wandb/settings
+2025-11-21 14:33:47,854 INFO    MainThread:33776 [wandb_setup.py:_flush():80] Loading settings from environment variables
+2025-11-21 14:33:47,854 INFO    MainThread:33776 [wandb_init.py:setup_run_log_directory():713] Logging user logs to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/results/sacred/maddpg/rware:rware-tiny-2ag-v2/1/results/wandb/wandb/run-20251121_143347-o9wlmhny/logs/debug.log
+2025-11-21 14:33:47,854 INFO    MainThread:33776 [wandb_init.py:setup_run_log_directory():714] Logging internal logs to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/results/sacred/maddpg/rware:rware-tiny-2ag-v2/1/results/wandb/wandb/run-20251121_143347-o9wlmhny/logs/debug-internal.log
+2025-11-21 14:33:47,854 INFO    MainThread:33776 [wandb_init.py:init():840] calling init triggers
+2025-11-21 14:33:47,854 INFO    MainThread:33776 [wandb_init.py:init():845] wandb.init called with sweep_config: {}
+config: {'runner': 'episode', 'mac': 'maddpg_mac', 'env': 'gymma', 'env_args': {'key': 'rware:rware-tiny-2ag-v2', 'time_limit': 500, 'render': False, 'seed': 684170928}, 'batch_size_run': 2048, 'test_nepisode': 2048, 'test_interval': 50000, 'test_greedy': True, 'log_interval': 50000, 'runner_log_interval': 10000, 'learner_log_interval': 10000, 't_max': 10000000, 'use_cuda': True, 'use_cuda_cnn_modules': True, 'buffer_cpu_only': True, 'extra_in_buffer': [], 'use_tensorboard': False, 'save_model': True, 'save_model_interval': 50000, 'checkpoint_path': '', 'evaluate': True, 'render': False, 'load_step': 0, 'save_replay': False, 'local_results_path': 'results', 'gamma': 0.99, 'batch_size': 32, 'buffer_size': 50000, 'lr': 0.0005, 'optim_alpha': 0.99, 'optim_eps': 1e-05, 'grad_norm_clip': 10, 'add_value_last_step': True, 'num_circle': 1, 'prioritized_buffer': False, 'agent': 'rnn', 'hidden_dim': 128, 'standardise_returns': False, 'standardise_rewards': True, 'cnn_features_dim': 128, 'obs_agent_id': True, 'obs_last_action': True, 'has_explorer': False, 'explorer': None, 'action_selector_strategy': 'basic_selector_strategy', 'repeat_id': 1, 'label': 'default_label', 'hypergroup': None, 'wandb': {'enable': True, 'project': 'VLCM_Phase1', 'entity': 'i2rLAB', 'run_name': None, 'notes': '', 'tags': [], 'save_dir': 'results/wandb', 'sync_tensorboard': False, 'resume': False, 'id': None}, 'target_update_interval_or_tau': 200, 'obs_individual_obs': False, 'reg': 0.001, 'use_rnn': True, 'learner': 'maddpg_learner', 'agent_output_type': 'pi_logits', 'critic_type': 'maddpg_critic', 'name': 'maddpg', 'seed': 684170928, '_wandb': {}}
+2025-11-21 14:33:47,854 INFO    MainThread:33776 [wandb_init.py:init():888] starting backend
+2025-11-21 14:33:48,071 INFO    MainThread:33776 [wandb_init.py:init():891] sending inform_init request
+2025-11-21 14:33:48,084 INFO    MainThread:33776 [wandb_init.py:init():899] backend started and connected
+2025-11-21 14:33:48,086 INFO    MainThread:33776 [wandb_init.py:init():969] updated telemetry
+2025-11-21 14:33:48,095 INFO    MainThread:33776 [wandb_init.py:init():993] communicating run to backend with 90.0 second timeout
+2025-11-21 14:33:48,557 INFO    MainThread:33776 [wandb_init.py:init():1040] starting run threads in backend
+2025-11-21 14:33:48,627 INFO    MainThread:33776 [wandb_run.py:_console_start():2504] atexit reg
+2025-11-21 14:33:48,627 INFO    MainThread:33776 [wandb_run.py:_redirect():2352] redirect: wrap_raw
+2025-11-21 14:33:48,627 INFO    MainThread:33776 [wandb_run.py:_redirect():2421] Wrapping output streams.
+2025-11-21 14:33:48,627 INFO    MainThread:33776 [wandb_run.py:_redirect():2444] Redirects installed.
+2025-11-21 14:33:48,629 INFO    MainThread:33776 [wandb_init.py:init():1080] run started, returning control to user process
+2025-11-21 14:33:50,643 INFO    wandb-AsyncioManager-main:33776 [service_client.py:_forward_responses():80] Reached EOF.
+2025-11-21 14:33:50,643 INFO    wandb-AsyncioManager-main:33776 [mailbox.py:close():137] Closing mailbox, abandoning 1 handles.

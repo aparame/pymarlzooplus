@@ -179,6 +179,12 @@ def main():
         default=2,
         help="Playback speed (frames per step). Default 2.",
     )
+    parser.add_argument(
+        "--out_dir",
+        type=str,
+        default=None,
+        help="Directory to save rendered frames as PNGs. If None, frames are not saved.",
+    )
     args = parser.parse_args()
 
     data = load_trajectory(args.file)
@@ -195,6 +201,11 @@ def main():
     pygame.display.set_caption(f"Replay: {os.path.basename(args.file)}")
     font = pygame.font.SysFont("Arial", 12)
     clock = pygame.time.Clock()
+
+    # Create output directory if saving frames
+    if args.out_dir:
+        os.makedirs(args.out_dir, exist_ok=True)
+        print(f"Saving frames to: {args.out_dir}")
 
     # Initialize Shelves state {id: [x,y]}
     # We need to simulate the whole history effectively to know where shelves end up.
@@ -282,6 +293,11 @@ def main():
             ]  # +1 because 0 is initial
 
             render_step(screen, font, metadata, current_shelf_state, current_step_data)
+
+            # Save frame if requested
+            if args.out_dir:
+                frame_path = os.path.join(args.out_dir, f"frame_{step_idx:04d}.png")
+                pygame.image.save(screen, frame_path)
         else:
             # End of replay
             screen.fill(BG_COLOR)

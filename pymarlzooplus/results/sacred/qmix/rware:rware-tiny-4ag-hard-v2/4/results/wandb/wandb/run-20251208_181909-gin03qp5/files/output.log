@@ -1,0 +1,124 @@
+[2;36m[12/08/25 18:19:09][0m[2;36m [0m[34mINFO    [0m wandb initialized
+[2;36m[12/08/25 18:19:10][0m[2;36m [0m[34mINFO    [0m Beginning training for [1;36m100[0m timesteps
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181910_success.json
+[2;36m                   [0m[2;36m [0m[34mINFO    [0m t_env: [1;36m110[0m [35m/[0m [1;36m100[0m
+[2;36m                   [0m[2;36m [0m[34mINFO    [0m Estimated time left: -. Time passed: [1;36m0[0m seconds
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181911_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181911_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181911_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181911_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181911_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181911_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181911_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181911_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181912_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181912_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181912_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181912_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181912_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181912_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181912_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181913_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181913_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181913_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181913_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181913_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181913_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181913_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181914_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181914_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181914_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181914_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181914_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181914_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181914_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181915_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181915_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181915_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181915_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181915_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181915_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181915_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181915_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181916_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181916_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181916_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181916_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181916_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181916_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181916_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181917_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181917_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181917_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181917_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181917_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181917_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181917_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181918_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181918_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181918_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181918_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181918_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181918_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181918_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181919_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181919_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181919_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181919_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181919_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181919_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181919_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181920_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181920_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181920_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181920_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181920_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181920_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181920_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181921_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181921_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181921_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181921_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181921_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181921_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181921_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181922_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181922_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181922_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181922_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181922_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181922_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181922_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181922_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181923_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181923_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181923_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181923_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181923_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181923_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181923_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181924_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181924_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181924_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181924_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181924_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/qmix/rware:rware-tiny-4ag-hard-v2/2025-12-08/trajectory_181924_success.json
+[2;36m[12/08/25 18:19:24][0m[2;36m [0m[34mINFO    [0m Saving models to
+[2;36m                    [0m         [35m/home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/results/sacred/qmix[0m
+[2;36m                    [0m         [35m/[0m[95mrware[0m:rware-tiny-4ag-hard-v2/[1;36m4[0m/models/[1;36m110[0m
+[2;36m                   [0m[2;36m [0m[34mINFO    [0m Finished Training
+[2;36m[12/08/25 18:19:34][0m[2;36m [0m[34mINFO    [0m Creating plots [33m...[0m
+[2;36m[12/08/25 18:19:35][0m[2;36m [0m[34mINFO    [0m Exiting Main
+[2;36m                   [0m[2;36m [0m[34mINFO    [0m Stopping all threads
+[2;36m                   [0m[2;36m [0m[34mINFO    [0m Thread Thread-[1;36m1[0m is alive! Is daemon: [3;91mFalse[0m
+[2;36m[12/08/25 18:19:37][0m[2;36m [0m[34mINFO    [0m Thread Thread-[1;36m1[0m did not terminate.
+[2;36m                   [0m[2;36m [0m[34mINFO    [0m Thread wandb-AsyncioManager-main is alive! Is daemon: [3;92mTrue[0m
+[2;36m[12/08/25 18:19:39][0m[2;36m [0m[34mINFO    [0m Thread wandb-AsyncioManager-main did not terminate.
+[2;36m                   [0m[2;36m [0m[34mINFO    [0m Thread ChkStopThr is alive! Is daemon: [3;92mTrue[0m
+[2;36m[12/08/25 18:19:41][0m[2;36m [0m[34mINFO    [0m Thread ChkStopThr did not terminate.
+[2;36m                   [0m[2;36m [0m[34mINFO    [0m Thread NetStatThr is alive! Is daemon: [3;92mTrue[0m
+[2;36m[12/08/25 18:19:43][0m[2;36m [0m[34mINFO    [0m Thread NetStatThr did not terminate.
+[2;36m                   [0m[2;36m [0m[34mINFO    [0m Thread IntMsgThr is alive! Is daemon: [3;92mTrue[0m
+[2;36m[12/08/25 18:19:45][0m[2;36m [0m[34mINFO    [0m Thread IntMsgThr did not terminate.
+[2;36m                   [0m[2;36m [0m[34mINFO    [0m Exiting script
+[2;36m                   [0m[2;36m [0m[34mINFO    [0m Completed after [1;92m0:00:37[0m

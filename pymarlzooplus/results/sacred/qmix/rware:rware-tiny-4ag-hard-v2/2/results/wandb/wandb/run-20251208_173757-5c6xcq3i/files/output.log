@@ -1,0 +1,124 @@
+[2;36m[12/08/25 17:37:58][0m[2;36m [0m[34mINFO    [0m wandb initialized
+[2;36m[12/08/25 17:37:59][0m[2;36m [0m[34mINFO    [0m Beginning training for [1;36m100[0m timesteps
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173759_success.json
+[2;36m                   [0m[2;36m [0m[34mINFO    [0m t_env: [1;36m110[0m [35m/[0m [1;36m100[0m
+[2;36m                   [0m[2;36m [0m[34mINFO    [0m Estimated time left: -. Time passed: [1;36m0[0m seconds
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173759_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173800_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173800_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173800_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173800_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173801_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173801_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173801_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173801_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173801_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173802_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173802_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173802_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173802_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173802_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173803_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173803_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173803_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173803_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173803_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173804_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173804_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173804_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173804_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173804_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173805_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173805_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173805_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173805_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173805_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173806_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173806_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173806_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173806_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173807_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173807_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173807_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173807_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173807_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173808_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173808_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173808_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173808_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173808_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173809_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173809_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173809_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173809_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173809_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173810_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173810_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173810_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173810_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173810_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173811_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173811_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173811_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173811_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173811_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173812_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173812_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173812_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173812_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173812_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173813_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173813_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173813_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173813_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173814_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173814_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173814_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173814_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173814_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173815_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173815_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173815_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173815_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173815_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173816_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173816_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173816_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173816_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173816_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173817_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173817_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173817_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173817_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173817_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173818_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173818_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173818_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173818_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173818_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173819_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173819_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173819_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173819_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173819_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173820_success.json
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/trajectories/trajectory_20251208_173820_success.json
+[2;36m[12/08/25 17:38:20][0m[2;36m [0m[34mINFO    [0m Saving models to
+[2;36m                    [0m         [35m/home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/results/sacred/qmix/[0m[95mrwar[0m
+[2;36m                    [0m         [95me[0m:rware-tiny-4ag-hard-v2/[1;36m2[0m/models/[1;36m110[0m
+[2;36m                   [0m[2;36m [0m[34mINFO    [0m Finished Training
+[2;36m[12/08/25 17:38:30][0m[2;36m [0m[34mINFO    [0m Creating plots [33m...[0m
+[2;36m[12/08/25 17:38:31][0m[2;36m [0m[34mINFO    [0m Exiting Main
+[2;36m                   [0m[2;36m [0m[34mINFO    [0m Stopping all threads
+[2;36m                   [0m[2;36m [0m[34mINFO    [0m Thread Thread-[1;36m1[0m is alive! Is daemon: [3;91mFalse[0m
+[2;36m[12/08/25 17:38:33][0m[2;36m [0m[34mINFO    [0m Thread Thread-[1;36m1[0m did not terminate.
+[2;36m                   [0m[2;36m [0m[34mINFO    [0m Thread wandb-AsyncioManager-main is alive! Is daemon: [3;92mTrue[0m
+[2;36m[12/08/25 17:38:35][0m[2;36m [0m[34mINFO    [0m Thread wandb-AsyncioManager-main did not terminate.
+[2;36m                   [0m[2;36m [0m[34mINFO    [0m Thread ChkStopThr is alive! Is daemon: [3;92mTrue[0m
+[2;36m[12/08/25 17:38:37][0m[2;36m [0m[34mINFO    [0m Thread ChkStopThr did not terminate.
+[2;36m                   [0m[2;36m [0m[34mINFO    [0m Thread NetStatThr is alive! Is daemon: [3;92mTrue[0m
+[2;36m[12/08/25 17:38:39][0m[2;36m [0m[34mINFO    [0m Thread NetStatThr did not terminate.
+[2;36m                   [0m[2;36m [0m[34mINFO    [0m Thread IntMsgThr is alive! Is daemon: [3;92mTrue[0m
+[2;36m[12/08/25 17:38:41][0m[2;36m [0m[34mINFO    [0m Thread IntMsgThr did not terminate.
+[2;36m                   [0m[2;36m [0m[34mINFO    [0m Exiting script
+[2;36m                   [0m[2;36m [0m[34mINFO    [0m Completed after [1;92m0:00:44[0m

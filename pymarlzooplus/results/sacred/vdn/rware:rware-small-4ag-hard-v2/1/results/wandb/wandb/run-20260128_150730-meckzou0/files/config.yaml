@@ -1,0 +1,206 @@
+_wandb:
+    value:
+        cli_version: 0.23.0
+        e:
+            kblbzqlxagiv6h05pn2cq5cuje3n8auo:
+                args:
+                    - --config=vdn
+                    - --env-config=gymma
+                    - with
+                    - env_args.key=rware:rware-small-4ag-hard-v2
+                codePath: pymarlzooplus/main.py
+                codePathLocal: pymarlzooplus/main.py
+                cpu_count: 16
+                cpu_count_logical: 24
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "982141468672"
+                        used: "568118693888"
+                email: aparame@g.clemson.edu
+                executable: /home/adi2440/anaconda3/envs/pymarlzooplus/bin/python3
+                git:
+                    commit: ab222e0d61c41b3927bd4e1df690eee3cbc9e153
+                    remote: https://github.com/aparame/pymarlzooplus.git
+                gpu: NVIDIA GeForce RTX 3080 Ti
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 10240
+                      memoryTotal: "12884901888"
+                      name: NVIDIA GeForce RTX 3080 Ti
+                      uuid: GPU-370a3a81-9866-4797-3079-9a993c76575a
+                host: administrator-Alienware-Aurora-R13
+                memory:
+                    total: "67197472768"
+                os: Linux-5.15.0-164-lowlatency-x86_64-with-glibc2.17
+                program: pymarlzooplus/main.py
+                python: CPython 3.8.18
+                root: /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/results/sacred/vdn/rware:rware-small-4ag-hard-v2/1/results/wandb
+                startedAt: "2026-01-28T20:07:30.424510Z"
+                writerId: kblbzqlxagiv6h05pn2cq5cuje3n8auo
+        m: []
+        python_version: 3.8.18
+        t:
+            "1":
+                - 1
+                - 5
+                - 52
+                - 53
+            "2":
+                - 1
+                - 5
+                - 52
+                - 53
+            "3":
+                - 13
+                - 16
+                - 61
+            "4": 3.8.18
+            "5": 0.23.0
+            "12": 0.23.0
+            "13": linux-x86_64
+action_selector:
+    value: epsilon_greedy
+action_selector_strategy:
+    value: basic_selector_strategy
+add_value_last_step:
+    value: true
+agent:
+    value: rnn
+agent_output_type:
+    value: q
+batch_size:
+    value: 128
+batch_size_run:
+    value: 1
+buffer_cpu_only:
+    value: true
+buffer_size:
+    value: 5000
+checkpoint_path:
+    value: ""
+cnn_features_dim:
+    value: 128
+double_q:
+    value: true
+env:
+    value: gymma
+env_args:
+    value:
+        key: rware:rware-small-4ag-hard-v2
+        render: false
+        seed: 308278919
+        time_limit: 110
+epsilon_anneal_time:
+    value: 50000
+epsilon_finish:
+    value: 0.05
+epsilon_start:
+    value: 1
+evaluate:
+    value: false
+evaluation_epsilon:
+    value: 0
+explorer:
+    value: null
+extra_in_buffer:
+    value: []
+gamma:
+    value: 0.99
+grad_norm_clip:
+    value: 10
+has_explorer:
+    value: false
+hidden_dim:
+    value: 64
+hypergroup:
+    value: null
+label:
+    value: default_label
+learner:
+    value: q_learner
+learner_log_interval:
+    value: 10000
+load_step:
+    value: 0
+local_results_path:
+    value: results
+log_interval:
+    value: 50000
+lr:
+    value: 0.0003
+mac:
+    value: basic_mac
+mixer:
+    value: vdn
+name:
+    value: vdn
+num_circle:
+    value: 1
+obs_agent_id:
+    value: true
+obs_individual_obs:
+    value: false
+obs_last_action:
+    value: true
+optim_alpha:
+    value: 0.99
+optim_eps:
+    value: 0.0001
+prioritized_buffer:
+    value: false
+prioritized_buffer_alpha:
+    value: 0.6
+render:
+    value: false
+repeat_id:
+    value: 1
+runner:
+    value: episode
+runner_log_interval:
+    value: 10000
+save_data:
+    value: false
+save_model:
+    value: true
+save_model_interval:
+    value: 500000
+save_replay:
+    value: false
+seed:
+    value: 308278919
+standardise_returns:
+    value: false
+standardise_rewards:
+    value: true
+t_max:
+    value: 15000000
+target_update_interval_or_tau:
+    value: 200
+test_greedy:
+    value: true
+test_interval:
+    value: 50000
+test_nepisode:
+    value: 100
+use_cuda:
+    value: true
+use_cuda_cnn_modules:
+    value: true
+use_rnn:
+    value: true
+use_tensorboard:
+    value: false
+wandb:
+    value:
+        enable: true
+        entity: i2rLAB
+        id: null
+        notes: ""
+        project: VLCM_Phase1
+        resume: false
+        run_name: null
+        save_dir: results/wandb
+        sync_tensorboard: false
+        tags: []

@@ -1,0 +1,8 @@
+{"time":"2025-11-21T11:31:55.159766115-05:00","level":"INFO","msg":"stream: starting","core version":"0.23.0"}
+{"time":"2025-11-21T11:31:55.374803693-05:00","level":"INFO","msg":"stream: created new stream","id":"h38kjizj"}
+{"time":"2025-11-21T11:31:55.374871594-05:00","level":"INFO","msg":"stream: started","id":"h38kjizj"}
+{"time":"2025-11-21T11:31:55.374905807-05:00","level":"INFO","msg":"handler: started","stream_id":"h38kjizj"}
+{"time":"2025-11-21T11:31:55.374932091-05:00","level":"INFO","msg":"writer: started","stream_id":"h38kjizj"}
+{"time":"2025-11-21T11:31:55.374924903-05:00","level":"INFO","msg":"sender: started","stream_id":"h38kjizj"}
+{"time":"2025-11-21T12:49:11.764784891-05:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/aparame-clemson-university/VLCM_Phase1/h38kjizj/file_stream"}
+{"time":"2025-11-21T12:49:11.764817661-05:00","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/aparame-clemson-university/VLCM_Phase1/h38kjizj/file_stream: {\"error\":\"run VLCM_Phase1/h38kjizj not found while streaming file\"}"}

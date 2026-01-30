@@ -1,0 +1,470 @@
+[11/21/25 11:31:54] INFO     Running command 'my_main'                                                                                  
+                    INFO     Started run with ID "1"                                                                                    
+                    INFO     Saving to FileStorageObserver in                                                                           
+                             '/home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/results/sacred/mat_dec/rware:rware-ti
+                             ny-2ag-v2/1'                                                                                               
+                    INFO     Experiment Parameters:                                                                                     
+                    INFO     {   'action_selector': 'soft_policies',                                                                    
+                                 'action_selector_strategy': 'basic_selector_strategy',                                                 
+                                 'add_value_last_step': True,                                                                           
+                                 'agent': 'mlp_mat',                                                                                    
+                                 'agent_output_type': 'pi_logits',                                                                      
+                                 'batch_size': 10,                                                                                      
+                                 'batch_size_run': 10,                                                                                  
+                                 'buffer_cpu_only': True,                                                                               
+                                 'buffer_size': 10,                                                                                     
+                                 'checkpoint_path': '',                                                                                 
+                                 'clip_param': 0.2,                                                                                     
+                                 'cnn_features_dim': 128,                                                                               
+                                 'critic_type': 'mat_critic',                                                                           
+                                 'entropy_coef': 0.01,                                                                                  
+                                 'env': 'gymma',                                                                                        
+                                 'env_args': {   'key': 'rware:rware-tiny-2ag-v2',                                                      
+                                                 'render': False,                                                                       
+                                                 'seed': 919694434,                                                                     
+                                                 'time_limit': 500},                                                                    
+                                 'evaluate': True,                                                                                      
+                                 'explorer': None,                                                                                      
+                                 'extra_in_buffer': [   'log_probs',                                                                    
+                                                        'values'],                                                                      
+                                 'gae_lambda': 0.95,                                                                                    
+                                 'gamma': 0.99,                                                                                         
+                                 'grad_norm_clip': 10,                                                                                  
+                                 'has_explorer': False,                                                                                 
+                                 'hidden_dim': 64,                                                                                      
+                                 'huber_delta': 10.0,                                                                                   
+                                 'hypergroup': None,                                                                                    
+                                 'label': 'default_label',                                                                              
+                                 'learner': 'mat_learner',                                                                              
+                                 'learner_log_interval': 10000,                                                                         
+                                 'load_step': 0,                                                                                        
+                                 'local_results_path': 'results',                                                                       
+                                 'log_interval': 50000,                                                                                 
+                                 'lr': '5e-4',                                                                                          
+                                 'mac': 'mat_mac',                                                                                      
+                                 'mask_before_softmax': True,                                                                           
+                                 'max_grad_norm': 10.0,                                                                                 
+                                 'n_block': 1,                                                                                          
+                                 'n_embd': 64,                                                                                          
+                                 'n_head': 1,                                                                                           
+                                 'name': 'mat_dec',                                                                                     
+                                 'num_circle': 1,                                                                                       
+                                 'num_mini_batch': 1,                                                                                   
+                                 'obs_agent_id': True,                                                                                  
+                                 'obs_individual_obs': False,                                                                           
+                                 'obs_last_action': False,                                                                              
+                                 'opti_eps': '1e-5',                                                                                    
+                                 'optim_alpha': 0.99,                                                                                   
+                                 'optim_eps': 1e-05,                                                                                    
+                                 'ppo_epoch': 15,                                                                                       
+                                 'prioritized_buffer': False,                                                                           
+                                 'render': False,                                                                                       
+                                 'repeat_id': 1,                                                                                        
+                                 'runner': 'parallel',                                                                                  
+                                 'runner_log_interval': 10000,                                                                          
+                                 'save_model': False,                                                                                   
+                                 'save_model_interval': 50000,                                                                          
+                                 'save_replay': False,                                                                                  
+                                 'seed': 919694434,                                                                                     
+                                 'standardise_returns': False,                                                                          
+                                 'standardise_rewards': False,                                                                          
+                                 't_max': 10000000,                                                                                     
+                                 'target_update_interval_or_tau': 200,                                                                  
+                                 'test_greedy': True,                                                                                   
+                                 'test_interval': 50000,                                                                                
+                                 'test_nepisode': 100,                                                                                  
+                                 'use_clipped_value_loss': True,                                                                        
+                                 'use_cuda': True,                                                                                      
+                                 'use_cuda_cnn_modules': True,                                                                          
+                                 'use_gae': True,                                                                                       
+                                 'use_huber_loss': True,                                                                                
+                                 'use_max_grad_norm': True,                                                                             
+                                 'use_popart': True,                                                                                    
+                                 'use_rnn': False,                                                                                      
+                                 'use_tensorboard': False,                                                                              
+                                 'value_loss_coef': 1,                                                                                  
+                                 'wandb': {   'enable': True,                                                                           
+                                              'entity': None,                                                                           
+                                              'id': None,                                                                               
+                                              'notes': '',                                                                              
+                                              'project': 'VLCM_Phase1',                                                                 
+                                              'resume': False,                                                                          
+                                              'run_name': None,                                                                         
+                                              'save_dir': 'results/wandb',                                                              
+                                              'sync_tensorboard': False,                                                                
+                                              'tags': [   ]},                                                                           
+                                 'weight_decay': 0}                                                                                     
+                                                                                                                                        
+wandb: Currently logged in as: aparame (aparame-clemson-university) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run h38kjizj
+wandb: Tracking run with wandb version 0.23.0
+wandb: Run data is saved locally in /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/results/sacred/mat_dec/rware:rware-tiny-2ag-v2/1/results/wandb/wandb/run-20251121_113154-h38kjizj
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run mat_dec_rware:rware-tiny-2ag-v2_mat_learner_seed919694434
+wandb: ⭐️ View project at https://wandb.ai/aparame-clemson-university/VLCM_Phase1
+wandb: 🚀 View run at https://wandb.ai/aparame-clemson-university/VLCM_Phase1/runs/h38kjizj
+[11/21/25 11:31:56] INFO     wandb initialized                                                                                          
+[11/21/25 11:32:02] INFO     Beginning training for 10000000 timesteps                                                                  
+[11/21/25 11:32:04] INFO     t_env: 5000 / 10000000                                                                                     
+                    INFO     Estimated time left: 8 minutes, 0 seconds. Time passed: 2 seconds                                          
+╭────────────────────────────────────────── Recent Stats  |  t_env: 50,000  |  Episode: 100 ───────────────────────────────────────────╮
+│ ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━┓                                                                         │
+│ ┃ Metric              ┃     Mean ┃    Std ┃ Average Window ┃                                                                         │
+│ ┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━┩                                                                         │
+│ │ entropy             │   1.5439 │ 0.0100 │              5 │                                                                         │
+│ │ ep_length_mean      │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ grad_norm           │   0.1267 │ 0.0297 │              5 │                                                                         │
+│ │ policy_loss         │  -0.0040 │ 0.0017 │              5 │                                                                         │
+│ │ ratio               │   0.9998 │ 0.0009 │              5 │                                                                         │
+│ │ return_mean         │   0.0100 │ 0.0200 │              5 │                                                                         │
+│ │ return_std          │   0.0436 │ 0.0872 │              5 │                                                                         │
+│ │ test_ep_length_mean │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_mean    │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_std     │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ value_loss          │   0.0172 │ 0.0343 │              5 │                                                                         │
+│ └─────────────────────┴──────────┴────────┴────────────────┘                                                                         │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[11/21/25 11:32:50] INFO     t_env: 55000 / 10000000                                                                                    
+                    INFO     Estimated time left: 2 hours, 31 minutes, 40 seconds. Time passed: 48 seconds                              
+╭────────────────────────────────────────── Recent Stats  |  t_env: 100,000  |  Episode: 200 ──────────────────────────────────────────╮
+│ ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━┓                                                                         │
+│ ┃ Metric              ┃     Mean ┃    Std ┃ Average Window ┃                                                                         │
+│ ┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━┩                                                                         │
+│ │ entropy             │   1.5154 │ 0.0254 │              5 │                                                                         │
+│ │ ep_length_mean      │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ grad_norm           │   0.1473 │ 0.0376 │              5 │                                                                         │
+│ │ policy_loss         │  -0.0035 │ 0.0007 │              5 │                                                                         │
+│ │ ratio               │   1.0000 │ 0.0005 │              5 │                                                                         │
+│ │ return_mean         │   0.0100 │ 0.0200 │              5 │                                                                         │
+│ │ return_std          │   0.0436 │ 0.0872 │              5 │                                                                         │
+│ │ test_ep_length_mean │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_mean    │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_std     │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ value_loss          │   0.0001 │ 0.0001 │              5 │                                                                         │
+│ └─────────────────────┴──────────┴────────┴────────────────┘                                                                         │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[11/21/25 11:33:35] INFO     t_env: 105000 / 10000000                                                                                   
+                    INFO     Estimated time left: 2 hours, 27 minutes, 51 seconds. Time passed: 1 minutes, 33 seconds                   
+╭────────────────────────────────────────── Recent Stats  |  t_env: 150,000  |  Episode: 300 ──────────────────────────────────────────╮
+│ ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━┓                                                                         │
+│ ┃ Metric              ┃     Mean ┃    Std ┃ Average Window ┃                                                                         │
+│ ┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━┩                                                                         │
+│ │ entropy             │   1.5126 │ 0.0065 │              5 │                                                                         │
+│ │ ep_length_mean      │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ grad_norm           │   0.1183 │ 0.0340 │              5 │                                                                         │
+│ │ policy_loss         │  -0.0030 │ 0.0016 │              5 │                                                                         │
+│ │ ratio               │   0.9999 │ 0.0007 │              5 │                                                                         │
+│ │ return_mean         │   0.0100 │ 0.0200 │              5 │                                                                         │
+│ │ return_std          │   0.0436 │ 0.0872 │              5 │                                                                         │
+│ │ test_ep_length_mean │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_mean    │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_std     │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ value_loss          │   0.0170 │ 0.0338 │              5 │                                                                         │
+│ └─────────────────────┴──────────┴────────┴────────────────┘                                                                         │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[11/21/25 11:34:19] INFO     t_env: 155000 / 10000000                                                                                   
+                    INFO     Estimated time left: 2 hours, 24 minutes, 33 seconds. Time passed: 2 minutes, 17 seconds                   
+╭────────────────────────────────────────── Recent Stats  |  t_env: 200,000  |  Episode: 400 ──────────────────────────────────────────╮
+│ ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━┓                                                                         │
+│ ┃ Metric              ┃     Mean ┃    Std ┃ Average Window ┃                                                                         │
+│ ┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━┩                                                                         │
+│ │ entropy             │   1.4009 │ 0.0263 │              5 │                                                                         │
+│ │ ep_length_mean      │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ grad_norm           │   0.1164 │ 0.0289 │              5 │                                                                         │
+│ │ policy_loss         │  -0.0034 │ 0.0008 │              5 │                                                                         │
+│ │ ratio               │   1.0002 │ 0.0005 │              5 │                                                                         │
+│ │ return_mean         │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ return_std          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_ep_length_mean │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_mean    │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_std     │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ value_loss          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ └─────────────────────┴──────────┴────────┴────────────────┘                                                                         │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[11/21/25 11:35:04] INFO     t_env: 205000 / 10000000                                                                                   
+                    INFO     Estimated time left: 2 hours, 26 minutes, 28 seconds. Time passed: 3 minutes, 2 seconds                    
+╭────────────────────────────────────────── Recent Stats  |  t_env: 250,000  |  Episode: 500 ──────────────────────────────────────────╮
+│ ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━┓                                                                         │
+│ ┃ Metric              ┃     Mean ┃    Std ┃ Average Window ┃                                                                         │
+│ ┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━┩                                                                         │
+│ │ entropy             │   1.2493 │ 0.0098 │              5 │                                                                         │
+│ │ ep_length_mean      │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ grad_norm           │   0.1295 │ 0.0345 │              5 │                                                                         │
+│ │ policy_loss         │  -0.0032 │ 0.0006 │              5 │                                                                         │
+│ │ ratio               │   0.9997 │ 0.0007 │              5 │                                                                         │
+│ │ return_mean         │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ return_std          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_ep_length_mean │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_mean    │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_std     │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ value_loss          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ └─────────────────────┴──────────┴────────┴────────────────┘                                                                         │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[11/21/25 11:35:49] INFO     t_env: 255000 / 10000000                                                                                   
+                    INFO     Estimated time left: 2 hours, 26 minutes, 10 seconds. Time passed: 3 minutes, 47 seconds                   
+╭────────────────────────────────────────── Recent Stats  |  t_env: 300,000  |  Episode: 600 ──────────────────────────────────────────╮
+│ ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━┓                                                                         │
+│ ┃ Metric              ┃     Mean ┃    Std ┃ Average Window ┃                                                                         │
+│ ┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━┩                                                                         │
+│ │ entropy             │   1.1903 │ 0.0157 │              5 │                                                                         │
+│ │ ep_length_mean      │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ grad_norm           │   0.1224 │ 0.0199 │              5 │                                                                         │
+│ │ policy_loss         │  -0.0033 │ 0.0002 │              5 │                                                                         │
+│ │ ratio               │   0.9998 │ 0.0007 │              5 │                                                                         │
+│ │ return_mean         │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ return_std          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_ep_length_mean │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_mean    │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_std     │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ value_loss          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ └─────────────────────┴──────────┴────────┴────────────────┘                                                                         │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[11/21/25 11:36:32] INFO     t_env: 305000 / 10000000                                                                                   
+                    INFO     Estimated time left: 2 hours, 20 minutes, 36 seconds. Time passed: 4 minutes, 30 seconds                   
+╭────────────────────────────────────────── Recent Stats  |  t_env: 350,000  |  Episode: 700 ──────────────────────────────────────────╮
+│ ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━┓                                                                         │
+│ ┃ Metric              ┃     Mean ┃    Std ┃ Average Window ┃                                                                         │
+│ ┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━┩                                                                         │
+│ │ entropy             │   1.1160 │ 0.0083 │              5 │                                                                         │
+│ │ ep_length_mean      │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ grad_norm           │   0.1570 │ 0.0628 │              5 │                                                                         │
+│ │ policy_loss         │  -0.0033 │ 0.0005 │              5 │                                                                         │
+│ │ ratio               │   0.9995 │ 0.0006 │              5 │                                                                         │
+│ │ return_mean         │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ return_std          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_ep_length_mean │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_mean    │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_std     │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ value_loss          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ └─────────────────────┴──────────┴────────┴────────────────┘                                                                         │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[11/21/25 11:37:15] INFO     t_env: 355000 / 10000000                                                                                   
+                    INFO     Estimated time left: 2 hours, 18 minutes, 34 seconds. Time passed: 5 minutes, 13 seconds                   
+╭────────────────────────────────────────── Recent Stats  |  t_env: 400,000  |  Episode: 800 ──────────────────────────────────────────╮
+│ ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━┓                                                                         │
+│ ┃ Metric              ┃     Mean ┃    Std ┃ Average Window ┃                                                                         │
+│ ┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━┩                                                                         │
+│ │ entropy             │   1.1027 │ 0.0222 │              5 │                                                                         │
+│ │ ep_length_mean      │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ grad_norm           │   0.1670 │ 0.0272 │              5 │                                                                         │
+│ │ policy_loss         │  -0.0029 │ 0.0004 │              5 │                                                                         │
+│ │ ratio               │   0.9996 │ 0.0006 │              5 │                                                                         │
+│ │ return_mean         │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ return_std          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_ep_length_mean │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_mean    │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_std     │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ value_loss          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ └─────────────────────┴──────────┴────────┴────────────────┘                                                                         │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[11/21/25 11:38:01] INFO     t_env: 405000 / 10000000                                                                                   
+                    INFO     Estimated time left: 2 hours, 27 minutes, 14 seconds. Time passed: 5 minutes, 59 seconds                   
+╭────────────────────────────────────────── Recent Stats  |  t_env: 450,000  |  Episode: 900 ──────────────────────────────────────────╮
+│ ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━┓                                                                         │
+│ ┃ Metric              ┃     Mean ┃    Std ┃ Average Window ┃                                                                         │
+│ ┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━┩                                                                         │
+│ │ entropy             │   1.0874 │ 0.0228 │              5 │                                                                         │
+│ │ ep_length_mean      │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ grad_norm           │   0.1420 │ 0.0352 │              5 │                                                                         │
+│ │ policy_loss         │  -0.0030 │ 0.0007 │              5 │                                                                         │
+│ │ ratio               │   0.9998 │ 0.0011 │              5 │                                                                         │
+│ │ return_mean         │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ return_std          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_ep_length_mean │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_mean    │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_std     │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ value_loss          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ └─────────────────────┴──────────┴────────┴────────────────┘                                                                         │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[11/21/25 11:38:44] INFO     t_env: 455000 / 10000000                                                                                   
+                    INFO     Estimated time left: 2 hours, 16 minutes, 50 seconds. Time passed: 6 minutes, 42 seconds                   
+╭───────────────────────────────────────── Recent Stats  |  t_env: 500,000  |  Episode: 1000 ──────────────────────────────────────────╮
+│ ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━┓                                                                         │
+│ ┃ Metric              ┃     Mean ┃    Std ┃ Average Window ┃                                                                         │
+│ ┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━┩                                                                         │
+│ │ entropy             │   1.0375 │ 0.0245 │              5 │                                                                         │
+│ │ ep_length_mean      │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ grad_norm           │   0.1691 │ 0.0440 │              5 │                                                                         │
+│ │ policy_loss         │  -0.0027 │ 0.0003 │              5 │                                                                         │
+│ │ ratio               │   0.9999 │ 0.0004 │              5 │                                                                         │
+│ │ return_mean         │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ return_std          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_ep_length_mean │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_mean    │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_std     │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ value_loss          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ └─────────────────────┴──────────┴────────┴────────────────┘                                                                         │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[11/21/25 11:39:28] INFO     t_env: 505000 / 10000000                                                                                   
+                    INFO     Estimated time left: 2 hours, 17 minutes, 12 seconds. Time passed: 7 minutes, 26 seconds                   
+╭───────────────────────────────────────── Recent Stats  |  t_env: 550,000  |  Episode: 1100 ──────────────────────────────────────────╮
+│ ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━┓                                                                         │
+│ ┃ Metric              ┃     Mean ┃    Std ┃ Average Window ┃                                                                         │
+│ ┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━┩                                                                         │
+│ │ entropy             │   1.0198 │ 0.0282 │              5 │                                                                         │
+│ │ ep_length_mean      │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ grad_norm           │   0.2178 │ 0.1095 │              5 │                                                                         │
+│ │ policy_loss         │  -0.0031 │ 0.0011 │              5 │                                                                         │
+│ │ ratio               │   0.9994 │ 0.0007 │              5 │                                                                         │
+│ │ return_mean         │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ return_std          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_ep_length_mean │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_mean    │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_std     │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ value_loss          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ └─────────────────────┴──────────┴────────┴────────────────┘                                                                         │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[11/21/25 11:40:11] INFO     t_env: 555000 / 10000000                                                                                   
+                    INFO     Estimated time left: 2 hours, 15 minutes, 51 seconds. Time passed: 8 minutes, 9 seconds                    
+╭───────────────────────────────────────── Recent Stats  |  t_env: 600,000  |  Episode: 1200 ──────────────────────────────────────────╮
+│ ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━┓                                                                         │
+│ ┃ Metric              ┃     Mean ┃    Std ┃ Average Window ┃                                                                         │
+│ ┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━┩                                                                         │
+│ │ entropy             │   0.9826 │ 0.0213 │              5 │                                                                         │
+│ │ ep_length_mean      │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ grad_norm           │   0.2266 │ 0.0736 │              5 │                                                                         │
+│ │ policy_loss         │  -0.0030 │ 0.0007 │              5 │                                                                         │
+│ │ ratio               │   0.9995 │ 0.0004 │              5 │                                                                         │
+│ │ return_mean         │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ return_std          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_ep_length_mean │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_mean    │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_std     │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ value_loss          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ └─────────────────────┴──────────┴────────┴────────────────┘                                                                         │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[11/21/25 11:40:54] INFO     t_env: 605000 / 10000000                                                                                   
+                    INFO     Estimated time left: 2 hours, 14 minutes, 13 seconds. Time passed: 8 minutes, 52 seconds                   
+╭───────────────────────────────────────── Recent Stats  |  t_env: 650,000  |  Episode: 1300 ──────────────────────────────────────────╮
+│ ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━┓                                                                         │
+│ ┃ Metric              ┃     Mean ┃    Std ┃ Average Window ┃                                                                         │
+│ ┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━┩                                                                         │
+│ │ entropy             │   0.9117 │ 0.0449 │              5 │                                                                         │
+│ │ ep_length_mean      │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ grad_norm           │   0.1738 │ 0.0391 │              5 │                                                                         │
+│ │ policy_loss         │  -0.0027 │ 0.0006 │              5 │                                                                         │
+│ │ ratio               │   0.9999 │ 0.0007 │              5 │                                                                         │
+│ │ return_mean         │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ return_std          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_ep_length_mean │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_mean    │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_std     │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ value_loss          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ └─────────────────────┴──────────┴────────┴────────────────┘                                                                         │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[11/21/25 11:41:37] INFO     t_env: 655000 / 10000000                                                                                   
+                    INFO     Estimated time left: 2 hours, 13 minutes, 59 seconds. Time passed: 9 minutes, 35 seconds                   
+╭───────────────────────────────────────── Recent Stats  |  t_env: 700,000  |  Episode: 1400 ──────────────────────────────────────────╮
+│ ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━┓                                                                         │
+│ ┃ Metric              ┃     Mean ┃    Std ┃ Average Window ┃                                                                         │
+│ ┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━┩                                                                         │
+│ │ entropy             │   0.8716 │ 0.0570 │              5 │                                                                         │
+│ │ ep_length_mean      │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ grad_norm           │   0.2010 │ 0.0292 │              5 │                                                                         │
+│ │ policy_loss         │  -0.0032 │ 0.0003 │              5 │                                                                         │
+│ │ ratio               │   1.0002 │ 0.0008 │              5 │                                                                         │
+│ │ return_mean         │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ return_std          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_ep_length_mean │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_mean    │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_std     │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ value_loss          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ └─────────────────────┴──────────┴────────┴────────────────┘                                                                         │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[11/21/25 11:42:20] INFO     t_env: 705000 / 10000000                                                                                   
+                    INFO     Estimated time left: 2 hours, 12 minutes, 20 seconds. Time passed: 10 minutes, 17 seconds                  
+╭───────────────────────────────────────── Recent Stats  |  t_env: 750,000  |  Episode: 1500 ──────────────────────────────────────────╮
+│ ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━┓                                                                         │
+│ ┃ Metric              ┃     Mean ┃    Std ┃ Average Window ┃                                                                         │
+│ ┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━┩                                                                         │
+│ │ entropy             │   0.8572 │ 0.0482 │              5 │                                                                         │
+│ │ ep_length_mean      │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ grad_norm           │   0.2503 │ 0.0558 │              5 │                                                                         │
+│ │ policy_loss         │  -0.0029 │ 0.0006 │              5 │                                                                         │
+│ │ ratio               │   0.9997 │ 0.0004 │              5 │                                                                         │
+│ │ return_mean         │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ return_std          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_ep_length_mean │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_mean    │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_std     │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ value_loss          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ └─────────────────────┴──────────┴────────┴────────────────┘                                                                         │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[11/21/25 11:43:02] INFO     t_env: 755000 / 10000000                                                                                   
+                    INFO     Estimated time left: 2 hours, 11 minutes, 48 seconds. Time passed: 11 minutes, 0 seconds                   
+╭───────────────────────────────────────── Recent Stats  |  t_env: 800,000  |  Episode: 1600 ──────────────────────────────────────────╮
+│ ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━┓                                                                         │
+│ ┃ Metric              ┃     Mean ┃    Std ┃ Average Window ┃                                                                         │
+│ ┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━┩                                                                         │
+│ │ entropy             │   0.7870 │ 0.0640 │              5 │                                                                         │
+│ │ ep_length_mean      │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ grad_norm           │   0.2218 │ 0.0242 │              5 │                                                                         │
+│ │ policy_loss         │  -0.0025 │ 0.0005 │              5 │                                                                         │
+│ │ ratio               │   0.9996 │ 0.0010 │              5 │                                                                         │
+│ │ return_mean         │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ return_std          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_ep_length_mean │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_mean    │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_std     │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ value_loss          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ └─────────────────────┴──────────┴────────┴────────────────┘                                                                         │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[11/21/25 11:43:45] INFO     t_env: 805000 / 10000000                                                                                   
+                    INFO     Estimated time left: 2 hours, 10 minutes, 4 seconds. Time passed: 11 minutes, 43 seconds                   
+╭───────────────────────────────────────── Recent Stats  |  t_env: 850,000  |  Episode: 1700 ──────────────────────────────────────────╮
+│ ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━┓                                                                         │
+│ ┃ Metric              ┃     Mean ┃    Std ┃ Average Window ┃                                                                         │
+│ ┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━┩                                                                         │
+│ │ entropy             │   0.8271 │ 0.0247 │              5 │                                                                         │
+│ │ ep_length_mean      │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ grad_norm           │   0.1927 │ 0.0609 │              5 │                                                                         │
+│ │ policy_loss         │  -0.0027 │ 0.0004 │              5 │                                                                         │
+│ │ ratio               │   0.9992 │ 0.0009 │              5 │                                                                         │
+│ │ return_mean         │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ return_std          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_ep_length_mean │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_mean    │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_std     │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ value_loss          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ └─────────────────────┴──────────┴────────┴────────────────┘                                                                         │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[11/21/25 11:44:27] INFO     t_env: 855000 / 10000000                                                                                   
+                    INFO     Estimated time left: 2 hours, 9 minutes, 53 seconds. Time passed: 12 minutes, 25 seconds                   
+╭───────────────────────────────────────── Recent Stats  |  t_env: 900,000  |  Episode: 1800 ──────────────────────────────────────────╮
+│ ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━┓                                                                         │
+│ ┃ Metric              ┃     Mean ┃    Std ┃ Average Window ┃                                                                         │
+│ ┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━┩                                                                         │
+│ │ entropy             │   0.8410 │ 0.0187 │              5 │                                                                         │
+│ │ ep_length_mean      │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ grad_norm           │   0.1850 │ 0.0391 │              5 │                                                                         │
+│ │ policy_loss         │  -0.0031 │ 0.0009 │              5 │                                                                         │
+│ │ ratio               │   1.0002 │ 0.0006 │              5 │                                                                         │
+│ │ return_mean         │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ return_std          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_ep_length_mean │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_mean    │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_std     │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ value_loss          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ └─────────────────────┴──────────┴────────┴────────────────┘                                                                         │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[11/21/25 11:45:10] INFO     t_env: 905000 / 10000000                                                                                   
+                    INFO     Estimated time left: 2 hours, 9 minutes, 53 seconds. Time passed: 13 minutes, 8 seconds                    
+╭───────────────────────────────────────── Recent Stats  |  t_env: 950,000  |  Episode: 1900 ──────────────────────────────────────────╮
+│ ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━┓                                                                         │
+│ ┃ Metric              ┃     Mean ┃    Std ┃ Average Window ┃                                                                         │
+│ ┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━┩                                                                         │
+│ │ entropy             │   0.8084 │ 0.0152 │              5 │                                                                         │
+│ │ ep_length_mean      │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ grad_norm           │   0.2337 │ 0.0347 │              5 │                                                                         │
+│ │ policy_loss         │  -0.0031 │ 0.0007 │              5 │                                                                         │
+│ │ ratio               │   0.9996 │ 0.0009 │              5 │                                                                         │
+│ │ return_mean         │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ return_std          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_ep_length_mean │ 500.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_mean    │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ test_return_std     │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ │ value_loss          │   0.0000 │ 0.0000 │              5 │                                                                         │
+│ └─────────────────────┴──────────┴────────┴────────────────┘                                                                         │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[11/21/25 11:45:53] INFO     t_env: 955000 / 10000000                                                                                   
+                    INFO     Estimated time left: 2 hours, 8 minutes, 29 seconds. Time passed: 13 minutes, 51 seconds                   

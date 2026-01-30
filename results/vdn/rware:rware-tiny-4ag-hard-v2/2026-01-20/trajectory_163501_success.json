@@ -1,0 +1,5432 @@
+{
+    "metadata": {
+        "env": "rware:rware-tiny-4ag-hard-v2",
+        "grid_size": [
+            11,
+            10
+        ],
+        "total_steps": 15000000,
+        "success": true
+    },
+    "initial_state": {
+        "shelves": [],
+        "agents": [
+            {
+                "id": 1,
+                "start_x": 6,
+                "start_y": 10,
+                "color": "blue"
+            },
+            {
+                "id": 2,
+                "start_x": 9,
+                "start_y": 3,
+                "color": "red"
+            },
+            {
+                "id": 3,
+                "start_x": 8,
+                "start_y": 3,
+                "color": "green"
+            },
+            {
+                "id": 4,
+                "start_x": 8,
+                "start_y": 9,
+                "color": "yellow"
+            }
+        ]
+    },
+    "trajectory": [
+        {
+            "step": 1,
+            "requests": [
+                8,
+                28
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "NOOP",
+                    "pos": [
+                        6,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        9,
+                        3
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        8,
+                        3
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 4,
+                    "action": "LEFT",
+                    "pos": [
+                        8,
+                        9
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 2,
+            "requests": [
+                8,
+                28
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "LEFT",
+                    "pos": [
+                        6,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        9,
+                        3
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "RIGHT",
+                    "pos": [
+                        8,
+                        4
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 4,
+                    "action": "LEFT",
+                    "pos": [
+                        8,
+                        9
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 3,
+            "requests": [
+                8,
+                28
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        6,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        9,
+                        3
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "LEFT",
+                    "pos": [
+                        8,
+                        4
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        8,
+                        9
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 4,
+            "requests": [
+                8,
+                28
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        9,
+                        3
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        8,
+                        4
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 5,
+            "requests": [
+                8,
+                28
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        9,
+                        3
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        8,
+                        5
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        9
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 6,
+            "requests": [
+                8,
+                28
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        10
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        8,
+                        3
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "LEFT",
+                    "pos": [
+                        8,
+                        6
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        5,
+                        9
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 7,
+            "requests": [
+                8,
+                28
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        10
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        8,
+                        3
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "RIGHT",
+                    "pos": [
+                        8,
+                        6
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        9
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 8,
+            "requests": [
+                8,
+                28
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        8,
+                        3
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        8,
+                        6
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 4,
+                    "action": "RIGHT",
+                    "pos": [
+                        3,
+                        9
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 9,
+            "requests": [
+                8,
+                28
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        5,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        8,
+                        3
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "TOGGLE_LOAD",
+                    "pos": [
+                        8,
+                        7
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        9
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 10,
+            "requests": [
+                8,
+                28
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "TOGGLE_LOAD",
+                    "pos": [
+                        8,
+                        2
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "LEFT",
+                    "pos": [
+                        8,
+                        7
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        8
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 11,
+            "requests": [
+                8,
+                28
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        3,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        8,
+                        2
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        8,
+                        7
+                    ],
+                    "dir": "EAST",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        7
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 12,
+            "requests": [
+                8,
+                28
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        10
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        8,
+                        2
+                    ],
+                    "dir": "EAST",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "RIGHT",
+                    "pos": [
+                        9,
+                        7
+                    ],
+                    "dir": "EAST",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        6
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 13,
+            "requests": [
+                8,
+                28
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "LEFT",
+                    "pos": [
+                        3,
+                        9
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        9,
+                        2
+                    ],
+                    "dir": "EAST",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        9,
+                        7
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "LEFT",
+                    "pos": [
+                        3,
+                        5
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 14,
+            "requests": [
+                8,
+                28
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        3,
+                        9
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        9,
+                        2
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        9,
+                        8
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        5
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 15,
+            "requests": [
+                8,
+                28
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        9
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        9,
+                        3
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        9,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "RIGHT",
+                    "pos": [
+                        2,
+                        5
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 16,
+            "requests": [
+                8,
+                28
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "LEFT",
+                    "pos": [
+                        3,
+                        8
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        9,
+                        4
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "RIGHT",
+                    "pos": [
+                        9,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        5
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 17,
+            "requests": [
+                8,
+                28
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        8
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        9,
+                        5
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        9,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        4
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 18,
+            "requests": [
+                8,
+                28
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        2,
+                        8
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        9,
+                        6
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        8,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        3
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 19,
+            "requests": [
+                8,
+                28
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        8
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        9,
+                        7
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "RIGHT",
+                    "pos": [
+                        2,
+                        2
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 20,
+            "requests": [
+                8,
+                28
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        7
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        9,
+                        8
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        2
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 21,
+            "requests": [
+                8,
+                18
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        6
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        9,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "LEFT",
+                    "pos": [
+                        5,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        2
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 22,
+            "requests": [
+                8,
+                18
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_LOAD",
+                    "pos": [
+                        2,
+                        5
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        9,
+                        9
+                    ],
+                    "dir": "WEST",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        2
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 23,
+            "requests": [
+                8,
+                18
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        2,
+                        5
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 18
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        8,
+                        9
+                    ],
+                    "dir": "WEST",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        5,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        5,
+                        2
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 24,
+            "requests": [
+                8,
+                18
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        5
+                    ],
+                    "dir": "EAST",
+                    "carrying": 18
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "WEST",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "RIGHT",
+                    "pos": [
+                        4,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        2
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 25,
+            "requests": [
+                8,
+                18
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        5
+                    ],
+                    "dir": "EAST",
+                    "carrying": 18
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        9
+                    ],
+                    "dir": "WEST",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        10
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "RIGHT",
+                    "pos": [
+                        7,
+                        2
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 26,
+            "requests": [
+                8,
+                18
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        4,
+                        5
+                    ],
+                    "dir": "EAST",
+                    "carrying": 18
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        5,
+                        9
+                    ],
+                    "dir": "WEST",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        9
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        2
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 27,
+            "requests": [
+                8,
+                18
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        5
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 18
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        5,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "LEFT",
+                    "pos": [
+                        4,
+                        8
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        3
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 28,
+            "requests": [
+                6,
+                18
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        6
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 18
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        5,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        8
+                    ],
+                    "dir": "WEST",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        4
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 29,
+            "requests": [
+                6,
+                18
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        7
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 18
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        10
+                    ],
+                    "dir": "EAST",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "RIGHT",
+                    "pos": [
+                        3,
+                        8
+                    ],
+                    "dir": "WEST",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        5
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 30,
+            "requests": [
+                6,
+                18
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        8
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 18
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        8
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        6
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 31,
+            "requests": [
+                6,
+                18
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 18
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        5,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        7
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        7
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 32,
+            "requests": [
+                6,
+                22
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        4,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 18
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        6
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "RIGHT",
+                    "pos": [
+                        7,
+                        8
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 33,
+            "requests": [
+                6,
+                22
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        4,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 18
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        5,
+                        10
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "LEFT",
+                    "pos": [
+                        3,
+                        5
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        8
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 34,
+            "requests": [
+                6,
+                22
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": 18
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        5,
+                        9
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        5
+                    ],
+                    "dir": "WEST",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        8
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 35,
+            "requests": [
+                6,
+                22
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        3,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": 18
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        5,
+                        8
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        2,
+                        5
+                    ],
+                    "dir": "WEST",
+                    "carrying": 28
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        8
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 36,
+            "requests": [
+                6,
+                22
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        10
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 18
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "LEFT",
+                    "pos": [
+                        2,
+                        5
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        5,
+                        8
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 37,
+            "requests": [
+                6,
+                22
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "LEFT",
+                    "pos": [
+                        3,
+                        9
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 18
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "EAST",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        5
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        8
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 38,
+            "requests": [
+                6,
+                22
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        3,
+                        9
+                    ],
+                    "dir": "WEST",
+                    "carrying": 18
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        6,
+                        7
+                    ],
+                    "dir": "EAST",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "TOGGLE_LOAD",
+                    "pos": [
+                        2,
+                        6
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        8
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 39,
+            "requests": [
+                6,
+                22
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        9
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 18
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        6,
+                        7
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "RIGHT",
+                    "pos": [
+                        2,
+                        6
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "RIGHT",
+                    "pos": [
+                        2,
+                        8
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 40,
+            "requests": [
+                6,
+                22
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "LEFT",
+                    "pos": [
+                        3,
+                        8
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 18
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        7
+                    ],
+                    "dir": "WEST",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "RIGHT",
+                    "pos": [
+                        2,
+                        6
+                    ],
+                    "dir": "WEST",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        8
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 41,
+            "requests": [
+                6,
+                22
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        3,
+                        8
+                    ],
+                    "dir": "WEST",
+                    "carrying": 18
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "WEST",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "RIGHT",
+                    "pos": [
+                        2,
+                        6
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        7
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 42,
+            "requests": [
+                6,
+                22
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        8
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 18
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        7
+                    ],
+                    "dir": "WEST",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        6
+                    ],
+                    "dir": "EAST",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        7
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 43,
+            "requests": [
+                6,
+                22
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        7
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 18
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        4,
+                        7
+                    ],
+                    "dir": "WEST",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        6
+                    ],
+                    "dir": "EAST",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        6
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 44,
+            "requests": [
+                6,
+                22
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "LEFT",
+                    "pos": [
+                        3,
+                        6
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 18
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        4,
+                        7
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        6
+                    ],
+                    "dir": "EAST",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        5
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 45,
+            "requests": [
+                6,
+                22
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        6
+                    ],
+                    "dir": "WEST",
+                    "carrying": 18
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        7
+                    ],
+                    "dir": "WEST",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        6
+                    ],
+                    "dir": "EAST",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        4
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 46,
+            "requests": [
+                6,
+                22
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        2,
+                        6
+                    ],
+                    "dir": "WEST",
+                    "carrying": 18
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        3,
+                        7
+                    ],
+                    "dir": "WEST",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        5,
+                        6
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        3
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 47,
+            "requests": [
+                6,
+                22
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        2,
+                        6
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        7
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "RIGHT",
+                    "pos": [
+                        2,
+                        2
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 48,
+            "requests": [
+                6,
+                22
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        6
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        6
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        5,
+                        8
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "TOGGLE_LOAD",
+                    "pos": [
+                        2,
+                        2
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                }
+            ]
+        },
+        {
+            "step": 49,
+            "requests": [
+                6,
+                22
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        5
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        5
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        5,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        2
+                    ],
+                    "dir": "EAST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 50,
+            "requests": [
+                6,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        4
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        4
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        2
+                    ],
+                    "dir": "EAST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 51,
+            "requests": [
+                6,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        3
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        3
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        5,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "RIGHT",
+                    "pos": [
+                        4,
+                        2
+                    ],
+                    "dir": "EAST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 52,
+            "requests": [
+                6,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        2
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        3,
+                        2
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        5,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        2
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 53,
+            "requests": [
+                6,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        2,
+                        1
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        2
+                    ],
+                    "dir": "WEST",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "RIGHT",
+                    "pos": [
+                        4,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        3
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 54,
+            "requests": [
+                6,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        1
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        2,
+                        2
+                    ],
+                    "dir": "WEST",
+                    "carrying": 8
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        10
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        4
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 55,
+            "requests": [
+                6,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        1
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        2,
+                        2
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        9
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        5
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 56,
+            "requests": [
+                6,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        1
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        2
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "LEFT",
+                    "pos": [
+                        4,
+                        8
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        6
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 57,
+            "requests": [
+                6,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        5,
+                        1
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        2,
+                        1
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        8
+                    ],
+                    "dir": "WEST",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        7
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 58,
+            "requests": [
+                6,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        1
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        1
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "RIGHT",
+                    "pos": [
+                        3,
+                        8
+                    ],
+                    "dir": "WEST",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        8
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 59,
+            "requests": [
+                6,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        7,
+                        1
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        1
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        8
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 60,
+            "requests": [
+                10,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        1
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        1
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        7
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "NOOP",
+                    "pos": [
+                        4,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 61,
+            "requests": [
+                10,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        2
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        5,
+                        1
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        6
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "RIGHT",
+                    "pos": [
+                        4,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 62,
+            "requests": [
+                10,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        3
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        1
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        5
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "RIGHT",
+                    "pos": [
+                        4,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 63,
+            "requests": [
+                10,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        4
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        7,
+                        1
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        4
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        10
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 64,
+            "requests": [
+                10,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        5
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        1
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        3
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        9
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 65,
+            "requests": [
+                10,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "LEFT",
+                    "pos": [
+                        7,
+                        6
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        2
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        2
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        8
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 66,
+            "requests": [
+                10,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        6
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        3
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "RIGHT",
+                    "pos": [
+                        3,
+                        1
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "LEFT",
+                    "pos": [
+                        4,
+                        7
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 67,
+            "requests": [
+                10,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_LOAD",
+                    "pos": [
+                        8,
+                        6
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        4
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        1
+                    ],
+                    "dir": "EAST",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        7
+                    ],
+                    "dir": "WEST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 68,
+            "requests": [
+                10,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        8,
+                        6
+                    ],
+                    "dir": "EAST",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        5
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        1
+                    ],
+                    "dir": "EAST",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "RIGHT",
+                    "pos": [
+                        3,
+                        7
+                    ],
+                    "dir": "WEST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 69,
+            "requests": [
+                10,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        9,
+                        6
+                    ],
+                    "dir": "EAST",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        6
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        5,
+                        1
+                    ],
+                    "dir": "EAST",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        7
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 70,
+            "requests": [
+                10,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        9,
+                        6
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        7
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "RIGHT",
+                    "pos": [
+                        6,
+                        1
+                    ],
+                    "dir": "EAST",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        6
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 71,
+            "requests": [
+                10,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        9,
+                        7
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        7,
+                        8
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        1
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        5
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 72,
+            "requests": [
+                10,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        9,
+                        8
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        8
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        2
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        4
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 73,
+            "requests": [
+                10,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        9,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        8
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        3
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "RIGHT",
+                    "pos": [
+                        3,
+                        3
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 74,
+            "requests": [
+                10,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        9,
+                        9
+                    ],
+                    "dir": "WEST",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        5,
+                        8
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        6,
+                        4
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        3
+                    ],
+                    "dir": "EAST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 75,
+            "requests": [
+                10,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        8,
+                        9
+                    ],
+                    "dir": "WEST",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        8
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        4
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        3
+                    ],
+                    "dir": "EAST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 76,
+            "requests": [
+                10,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "WEST",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        8
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        6,
+                        5
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "NOOP",
+                    "pos": [
+                        5,
+                        3
+                    ],
+                    "dir": "EAST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 77,
+            "requests": [
+                10,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        6,
+                        9
+                    ],
+                    "dir": "WEST",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        2,
+                        8
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        5
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        5,
+                        3
+                    ],
+                    "dir": "EAST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 78,
+            "requests": [
+                10,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        9
+                    ],
+                    "dir": "WEST",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        8
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        6,
+                        6
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "RIGHT",
+                    "pos": [
+                        6,
+                        3
+                    ],
+                    "dir": "EAST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 79,
+            "requests": [
+                10,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "LEFT",
+                    "pos": [
+                        5,
+                        9
+                    ],
+                    "dir": "WEST",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        7
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        6,
+                        6
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        3
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 80,
+            "requests": [
+                10,
+                24
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        5,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        6
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        6
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "NOOP",
+                    "pos": [
+                        6,
+                        4
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 81,
+            "requests": [
+                10,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        5
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        6,
+                        7
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        4
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 82,
+            "requests": [
+                10,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        2,
+                        4
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        6,
+                        7
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "NOOP",
+                    "pos": [
+                        6,
+                        5
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 83,
+            "requests": [
+                10,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "LEFT",
+                    "pos": [
+                        5,
+                        10
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        2,
+                        4
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        6,
+                        7
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "NOOP",
+                    "pos": [
+                        6,
+                        5
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 84,
+            "requests": [
+                10,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "NOOP",
+                    "pos": [
+                        5,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        2,
+                        4
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        7
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        5
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 85,
+            "requests": [
+                10,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        2,
+                        4
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        8
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "NOOP",
+                    "pos": [
+                        6,
+                        6
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 86,
+            "requests": [
+                10,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        5,
+                        10
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        4
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "LEFT",
+                    "pos": [
+                        6,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        6
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 87,
+            "requests": [
+                10,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        9
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "TOGGLE_LOAD",
+                    "pos": [
+                        2,
+                        3
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 3,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        9
+                    ],
+                    "dir": "EAST",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "RIGHT",
+                    "pos": [
+                        6,
+                        7
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 88,
+            "requests": [
+                10,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "NOOP",
+                    "pos": [
+                        5,
+                        9
+                    ],
+                    "dir": "EAST",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        2,
+                        3
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 10
+                },
+                {
+                    "id": 3,
+                    "action": "RIGHT",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "EAST",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "FORWARD",
+                    "pos": [
+                        6,
+                        7
+                    ],
+                    "dir": "WEST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 89,
+            "requests": [
+                10,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        9
+                    ],
+                    "dir": "EAST",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        3
+                    ],
+                    "dir": "EAST",
+                    "carrying": 10
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "WEST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 90,
+            "requests": [
+                10,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "NOOP",
+                    "pos": [
+                        5,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        3
+                    ],
+                    "dir": "EAST",
+                    "carrying": 10
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "WEST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 91,
+            "requests": [
+                10,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        4,
+                        3
+                    ],
+                    "dir": "EAST",
+                    "carrying": 10
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "WEST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 92,
+            "requests": [
+                10,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        5,
+                        9
+                    ],
+                    "dir": "WEST",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        3
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 10
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 93,
+            "requests": [
+                10,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "NOOP",
+                    "pos": [
+                        4,
+                        9
+                    ],
+                    "dir": "WEST",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        4
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 10
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "NOOP",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "EAST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 94,
+            "requests": [
+                10,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        9
+                    ],
+                    "dir": "WEST",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        5
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 10
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "EAST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 95,
+            "requests": [
+                10,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "NOOP",
+                    "pos": [
+                        3,
+                        9
+                    ],
+                    "dir": "WEST",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "NOOP",
+                    "pos": [
+                        4,
+                        6
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 10
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "LEFT",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 96,
+            "requests": [
+                10,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "RIGHT",
+                    "pos": [
+                        3,
+                        9
+                    ],
+                    "dir": "WEST",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        6
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 10
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "LEFT",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "EAST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 97,
+            "requests": [
+                10,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        9
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        7
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 10
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 98,
+            "requests": [
+                10,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "NOOP",
+                    "pos": [
+                        3,
+                        8
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        8
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 10
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "NOOP",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "EAST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 99,
+            "requests": [
+                10,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "NOOP",
+                    "pos": [
+                        3,
+                        8
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 10
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "NOOP",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "EAST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 100,
+            "requests": [
+                19,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        8
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        4,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 10
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "NOOP",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "EAST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 101,
+            "requests": [
+                19,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "NOOP",
+                    "pos": [
+                        3,
+                        7
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        4,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": 10
+                },
+                {
+                    "id": 3,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "EAST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 102,
+            "requests": [
+                19,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "NOOP",
+                    "pos": [
+                        3,
+                        7
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        4,
+                        10
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 10
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "NOOP",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 103,
+            "requests": [
+                19,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        7
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        4,
+                        10
+                    ],
+                    "dir": "EAST",
+                    "carrying": 10
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "NOOP",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 104,
+            "requests": [
+                19,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "NOOP",
+                    "pos": [
+                        3,
+                        6
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        4,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 10
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 105,
+            "requests": [
+                19,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "NOOP",
+                    "pos": [
+                        3,
+                        6
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "NOOP",
+                    "pos": [
+                        4,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": 10
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "NOOP",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "WEST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 106,
+            "requests": [
+                19,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "NOOP",
+                    "pos": [
+                        3,
+                        6
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        4,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": 10
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "NOOP",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "WEST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 107,
+            "requests": [
+                19,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "NOOP",
+                    "pos": [
+                        3,
+                        6
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "NOOP",
+                    "pos": [
+                        3,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": 10
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "WEST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 108,
+            "requests": [
+                19,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "NOOP",
+                    "pos": [
+                        3,
+                        6
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "NOOP",
+                    "pos": [
+                        3,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": 10
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 109,
+            "requests": [
+                19,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "NOOP",
+                    "pos": [
+                        3,
+                        6
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "NOOP",
+                    "pos": [
+                        3,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": 10
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "NOOP",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "EAST",
+                    "carrying": 6
+                }
+            ]
+        },
+        {
+            "step": 110,
+            "requests": [
+                19,
+                13
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "NOOP",
+                    "pos": [
+                        3,
+                        6
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 24
+                },
+                {
+                    "id": 2,
+                    "action": "NOOP",
+                    "pos": [
+                        3,
+                        10
+                    ],
+                    "dir": "WEST",
+                    "carrying": 10
+                },
+                {
+                    "id": 3,
+                    "action": "NOOP",
+                    "pos": [
+                        7,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 22
+                },
+                {
+                    "id": 4,
+                    "action": "RIGHT",
+                    "pos": [
+                        5,
+                        7
+                    ],
+                    "dir": "EAST",
+                    "carrying": 6
+                }
+            ]
+        }
+    ]
+}

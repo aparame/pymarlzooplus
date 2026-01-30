@@ -3,7 +3,7 @@ env: "gymma"
 env_args:
   key: null
   time_limit: 110  # Episode horizon
-  render: False
+  render: True
 
 test_greedy: True
 test_nepisode: 100

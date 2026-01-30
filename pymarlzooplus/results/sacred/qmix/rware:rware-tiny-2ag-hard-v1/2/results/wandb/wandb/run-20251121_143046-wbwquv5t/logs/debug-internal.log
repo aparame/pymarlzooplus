@@ -1,0 +1,8 @@
+{"time":"2025-11-21T14:30:46.551355636-05:00","level":"INFO","msg":"stream: starting","core version":"0.23.0"}
+{"time":"2025-11-21T14:30:46.779656632-05:00","level":"INFO","msg":"stream: created new stream","id":"wbwquv5t"}
+{"time":"2025-11-21T14:30:46.779738835-05:00","level":"INFO","msg":"stream: started","id":"wbwquv5t"}
+{"time":"2025-11-21T14:30:46.780191078-05:00","level":"INFO","msg":"sender: started","stream_id":"wbwquv5t"}
+{"time":"2025-11-21T14:30:46.780259731-05:00","level":"INFO","msg":"handler: started","stream_id":"wbwquv5t"}
+{"time":"2025-11-21T14:30:46.780267003-05:00","level":"INFO","msg":"writer: started","stream_id":"wbwquv5t"}
+{"time":"2025-11-21T14:32:47.451577514-05:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/i2rLAB/VLCM_Phase1/wbwquv5t/file_stream"}
+{"time":"2025-11-21T14:32:47.451612779-05:00","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/i2rLAB/VLCM_Phase1/wbwquv5t/file_stream: {\"error\":\"run VLCM_Phase1/wbwquv5t not found while streaming file\"}"}

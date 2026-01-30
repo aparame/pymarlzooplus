@@ -137,10 +137,15 @@ class EpisodeRunner:
             total_steps = self.args.t_max
 
             # Initial State
-            shelves = []
+            shelves_to_record = []
             if hasattr(unwrapped_env, "shelves"):
-                for s in unwrapped_env.shelves:
-                    shelves.append({"id": s.id, "x": s.x, "y": s.y})
+                shelves_to_record = unwrapped_env.shelves
+            elif hasattr(unwrapped_env, "shelfs"):
+                shelves_to_record = unwrapped_env.shelfs
+
+            shelves = []
+            for s in shelves_to_record:
+                shelves.append({"id": s.id, "x": s.x, "y": s.y})
 
             init_agents = []
             if hasattr(unwrapped_env, "agents"):
@@ -263,6 +268,10 @@ class EpisodeRunner:
 
                     ag_dict["action"] = action_name
 
+                    ag_dict["action"] = action_name
+                
+                current_step_record["reward"] = reward.item() if hasattr(reward, "item") else reward
+
                 trajectory_data["trajectory"].append(current_step_record)
             # ---------------------------------------
 
@@ -328,6 +337,10 @@ class EpisodeRunner:
             # Define success based on user req
             is_success = terminated and not env_info.get("TimeLimit.truncated", False)
             trajectory_data["metadata"]["success"] = is_success
+            total_reward = episode_return
+            if hasattr(episode_return, "item"):
+                total_reward = episode_return.item()
+            trajectory_data["metadata"]["total_reward"] = total_reward
 
             outcome = "success" if is_success else "fail"
             timestamp = datetime.datetime.now().strftime(

@@ -1,0 +1,15 @@
+[2;36m[12/08/25 18:18:18][0m[2;36m [0m[34mINFO    [0m wandb initialized
+[2;36m[12/08/25 18:18:19][0m[2;36m [0m[34mINFO    [0m Beginning training for [1;36m100[0m timesteps
+[2;36m[12/08/25 18:18:21][0m[2;36m [0m[1;31mERROR   [0m Failed after [1;92m0:00:04[0m!
+Traceback (most recent calls WITHOUT Sacred internals):
+  File "pymarlzooplus/main.py", line 47, in my_main
+    run(_run, config, _log)
+  File "/home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/run.py", line 136, in run
+    run_sequential(args=args, logger=logger)
+  File "/home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/run.py", line 319, in run_sequential
+    episode_batch, episode_return = runner.run(test_mode=False)
+  File "/home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/episode_runner.py", line 189, in run
+    request_queue = [r.shelf_id for r in unwrapped_env.request_queue]
+  File "/home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/episode_runner.py", line 189, in <listcomp>
+    request_queue = [r.shelf_id for r in unwrapped_env.request_queue]
+AttributeError: 'Shelf' object has no attribute 'shelf_id'

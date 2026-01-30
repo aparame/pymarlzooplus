@@ -1,0 +1,184 @@
+[11/18/25 10:38:37] INFO     Running command 'my_main'                                                   
+                    INFO     Started run with ID "1"                                                     
+                    INFO     Saving to FileStorageObserver in                                            
+                             '/home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/result
+                             s/sacred/qmix/rware:rware-tiny-2ag-hard-v1/1'                               
+                    INFO     Experiment Parameters:                                                      
+                    INFO     {   'action_selector': 'epsilon_greedy',                                    
+                                 'action_selector_strategy': 'basic_selector_strategy',                  
+                                 'add_value_last_step': True,                                            
+                                 'agent': 'rnn',                                                         
+                                 'agent_output_type': 'q',                                               
+                                 'batch_size': 32,                                                       
+                                 'batch_size_run': 1,                                                    
+                                 'buffer_cpu_only': True,                                                
+                                 'buffer_size': 5000,                                                    
+                                 'checkpoint_path': '',                                                  
+                                 'cnn_features_dim': 128,                                                
+                                 'double_q': True,                                                       
+                                 'env': 'gymma',                                                         
+                                 'env_args': {   'key': 'rware:rware-tiny-2ag-hard-v1',                  
+                                                 'render': False,                                        
+                                                 'seed': 2756703,                                        
+                                                 'time_limit': 500},                                     
+                                 'epsilon_anneal_time': 50000,                                           
+                                 'epsilon_finish': 0.05,                                                 
+                                 'epsilon_start': 1.0,                                                   
+                                 'evaluate': False,                                                      
+                                 'evaluation_epsilon': 0.0,                                              
+                                 'explorer': None,                                                       
+                                 'extra_in_buffer': [   ],                                               
+                                 'gamma': 0.99,                                                          
+                                 'grad_norm_clip': 10,                                                   
+                                 'has_explorer': False,                                                  
+                                 'hidden_dim': 64,                                                       
+                                 'hypergroup': None,                                                     
+                                 'hypernet_embed': 64,                                                   
+                                 'hypernet_layers': 2,                                                   
+                                 'label': 'default_label',                                               
+                                 'learner': 'q_learner',                                                 
+                                 'learner_log_interval': 10000,                                          
+                                 'load_step': 0,                                                         
+                                 'local_results_path': 'results',                                        
+                                 'log_interval': 50000,                                                  
+                                 'lr': 0.0005,                                                           
+                                 'mac': 'basic_mac',                                                     
+                                 'mixer': 'qmix',                                                        
+                                 'mixing_embed_dim': 32,                                                 
+                                 'name': 'qmix',                                                         
+                                 'num_circle': 1,                                                        
+                                 'obs_agent_id': True,                                                   
+                                 'obs_individual_obs': False,                                            
+                                 'obs_last_action': True,                                                
+                                 'optim_alpha': 0.99,                                                    
+                                 'optim_eps': 1e-05,                                                     
+                                 'prioritized_buffer': False,                                            
+                                 'prioritized_buffer_alpha': 0.6,                                        
+                                 'render': False,                                                        
+                                 'repeat_id': 1,                                                         
+                                 'runner': 'episode',                                                    
+                                 'runner_log_interval': 10000,                                           
+                                 'save_model': False,                                                    
+                                 'save_model_interval': 50000,                                           
+                                 'save_replay': False,                                                   
+                                 'seed': 2756703,                                                        
+                                 'standardise_returns': False,                                           
+                                 'standardise_rewards': True,                                            
+                                 't_max': 10000000,                                                      
+                                 'target_update_interval_or_tau': 200,                                   
+                                 'test_greedy': True,                                                    
+                                 'test_interval': 50000,                                                 
+                                 'test_nepisode': 100,                                                   
+                                 'use_cuda': False,                                                      
+                                 'use_cuda_cnn_modules': True,                                           
+                                 'use_rnn': True,                                                        
+                                 'use_tensorboard': False}                                               
+                                                                                                         
+[11/18/25 10:38:38] INFO     Beginning training for 10000000 timesteps                                   
+[11/18/25 10:38:39] INFO     t_env: 500 / 10000000                                                       
+                    INFO     Estimated time left: 1 minutes, 6 seconds. Time passed: 0 seconds           
+╭─────────────────────────── Recent Stats  |  t_env: 50,000  |  Episode: 100 ───────────────────────────╮
+│ ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━┓                                          │
+│ ┃ Metric              ┃     Mean ┃    Std ┃ Average Window ┃                                          │
+│ ┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━┩                                          │
+│ │ ep_length_mean      │ 500.0000 │ 0.0000 │              5 │                                          │
+│ │ epsilon             │   0.2400 │ 0.0000 │              1 │                                          │
+│ │ grad_norm           │   7.2276 │ 8.3226 │              5 │                                          │
+│ │ loss                │   0.1365 │ 0.1073 │              5 │                                          │
+│ │ q_taken_mean        │   0.5561 │ 0.0751 │              5 │                                          │
+│ │ return_mean         │   0.0000 │ 0.0000 │              5 │                                          │
+│ │ return_std          │   0.0000 │ 0.0000 │              5 │                                          │
+│ │ target_mean         │   0.6133 │ 0.1079 │              5 │                                          │
+│ │ td_error_abs        │   0.2664 │ 0.1094 │              5 │                                          │
+│ │ test_ep_length_mean │ 500.0000 │ 0.0000 │              5 │                                          │
+│ │ test_return_mean    │   0.0000 │ 0.0000 │              5 │                                          │
+│ │ test_return_std     │   0.0000 │ 0.0000 │              5 │                                          │
+│ └─────────────────────┴──────────┴────────┴────────────────┘                                          │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[11/18/25 10:40:07] INFO     t_env: 50500 / 10000000                                                     
+                    INFO     Estimated time left: 4 hours, 53 minutes, 13 seconds. Time passed: 1        
+                             minutes, 28 seconds                                                         
+╭────────────────────────── Recent Stats  |  t_env: 100,000  |  Episode: 200 ───────────────────────────╮
+│ ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━┓                                          │
+│ ┃ Metric              ┃     Mean ┃    Std ┃ Average Window ┃                                          │
+│ ┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━┩                                          │
+│ │ ep_length_mean      │ 500.0000 │ 0.0000 │              5 │                                          │
+│ │ epsilon             │   0.0500 │ 0.0000 │              1 │                                          │
+│ │ grad_norm           │   2.7405 │ 1.0998 │              5 │                                          │
+│ │ loss                │   0.0514 │ 0.0109 │              5 │                                          │
+│ │ q_taken_mean        │   0.6560 │ 0.0203 │              5 │                                          │
+│ │ return_mean         │   0.0000 │ 0.0000 │              5 │                                          │
+│ │ return_std          │   0.0000 │ 0.0000 │              5 │                                          │
+│ │ target_mean         │   0.6667 │ 0.0311 │              5 │                                          │
+│ │ td_error_abs        │   0.1653 │ 0.0198 │              5 │                                          │
+│ │ test_ep_length_mean │ 500.0000 │ 0.0000 │              5 │                                          │
+│ │ test_return_mean    │   0.0000 │ 0.0000 │              5 │                                          │
+│ │ test_return_std     │   0.0000 │ 0.0000 │              5 │                                          │
+│ └─────────────────────┴──────────┴────────┴────────────────┘                                          │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[11/18/25 10:41:48] INFO     t_env: 100500 / 10000000                                                    
+                    INFO     Estimated time left: 5 hours, 32 minutes, 36 seconds. Time passed: 3        
+                             minutes, 9 seconds                                                          
+╭────────────────────────── Recent Stats  |  t_env: 150,000  |  Episode: 300 ───────────────────────────╮
+│ ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━┓                                          │
+│ ┃ Metric              ┃     Mean ┃    Std ┃ Average Window ┃                                          │
+│ ┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━┩                                          │
+│ │ ep_length_mean      │ 500.0000 │ 0.0000 │              5 │                                          │
+│ │ epsilon             │   0.0500 │ 0.0000 │              1 │                                          │
+│ │ grad_norm           │   0.8566 │ 0.3968 │              5 │                                          │
+│ │ loss                │   0.0213 │ 0.0062 │              5 │                                          │
+│ │ q_taken_mean        │   0.7651 │ 0.0612 │              5 │                                          │
+│ │ return_mean         │   0.0000 │ 0.0000 │              5 │                                          │
+│ │ return_std          │   0.0000 │ 0.0000 │              5 │                                          │
+│ │ target_mean         │   0.7707 │ 0.0522 │              5 │                                          │
+│ │ td_error_abs        │   0.0801 │ 0.0213 │              5 │                                          │
+│ │ test_ep_length_mean │ 500.0000 │ 0.0000 │              5 │                                          │
+│ │ test_return_mean    │   0.0000 │ 0.0000 │              5 │                                          │
+│ │ test_return_std     │   0.0000 │ 0.0000 │              5 │                                          │
+│ └─────────────────────┴──────────┴────────┴────────────────┘                                          │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[11/18/25 10:43:29] INFO     t_env: 150500 / 10000000                                                    
+                    INFO     Estimated time left: 5 hours, 33 minutes, 9 seconds. Time passed: 4 minutes,
+                             51 seconds                                                                  
+╭────────────────────────── Recent Stats  |  t_env: 200,000  |  Episode: 400 ───────────────────────────╮
+│ ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━┓                                          │
+│ ┃ Metric              ┃     Mean ┃    Std ┃ Average Window ┃                                          │
+│ ┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━┩                                          │
+│ │ ep_length_mean      │ 500.0000 │ 0.0000 │              5 │                                          │
+│ │ epsilon             │   0.0500 │ 0.0000 │              1 │                                          │
+│ │ grad_norm           │   0.8891 │ 0.2844 │              5 │                                          │
+│ │ loss                │   0.0182 │ 0.0018 │              5 │                                          │
+│ │ q_taken_mean        │   0.9138 │ 0.0574 │              5 │                                          │
+│ │ return_mean         │   0.0000 │ 0.0000 │              5 │                                          │
+│ │ return_std          │   0.0000 │ 0.0000 │              5 │                                          │
+│ │ target_mean         │   0.9130 │ 0.0605 │              5 │                                          │
+│ │ td_error_abs        │   0.0648 │ 0.0060 │              5 │                                          │
+│ │ test_ep_length_mean │ 500.0000 │ 0.0000 │              5 │                                          │
+│ │ test_return_mean    │   0.0000 │ 0.0000 │              5 │                                          │
+│ │ test_return_std     │   0.0000 │ 0.0000 │              5 │                                          │
+│ └─────────────────────┴──────────┴────────┴────────────────┘                                          │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[11/18/25 10:45:10] INFO     t_env: 200500 / 10000000                                                    
+                    INFO     Estimated time left: 5 hours, 28 minutes, 44 seconds. Time passed: 6        
+                             minutes, 31 seconds                                                         
+╭────────────────────────── Recent Stats  |  t_env: 250,000  |  Episode: 500 ───────────────────────────╮
+│ ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━┓                                          │
+│ ┃ Metric              ┃     Mean ┃    Std ┃ Average Window ┃                                          │
+│ ┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━┩                                          │
+│ │ ep_length_mean      │ 500.0000 │ 0.0000 │              5 │                                          │
+│ │ epsilon             │   0.0500 │ 0.0000 │              1 │                                          │
+│ │ grad_norm           │   1.2045 │ 0.8335 │              5 │                                          │
+│ │ loss                │   0.0175 │ 0.0031 │              5 │                                          │
+│ │ q_taken_mean        │   0.9958 │ 0.0339 │              5 │                                          │
+│ │ return_mean         │   0.0000 │ 0.0000 │              5 │                                          │
+│ │ return_std          │   0.0000 │ 0.0000 │              5 │                                          │
+│ │ target_mean         │   1.0041 │ 0.0289 │              5 │                                          │
+│ │ td_error_abs        │   0.0628 │ 0.0133 │              5 │                                          │
+│ │ test_ep_length_mean │ 500.0000 │ 0.0000 │              5 │                                          │
+│ │ test_return_mean    │   0.0000 │ 0.0000 │              5 │                                          │
+│ │ test_return_std     │   0.0000 │ 0.0000 │              5 │                                          │
+│ └─────────────────────┴──────────┴────────┴────────────────┘                                          │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[11/18/25 10:46:50] INFO     t_env: 250500 / 10000000                                                    
+                    INFO     Estimated time left: 5 hours, 26 minutes, 0 seconds. Time passed: 8 minutes,
+                             11 seconds                                                                  

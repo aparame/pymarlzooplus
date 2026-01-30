@@ -1,0 +1,12 @@
+[2;36m[11/21/25 14:36:24][0m[2;36m [0m[34mINFO    [0m wandb initialized
+[2;36m[11/21/25 14:36:26][0m[2;36m [0m[1;31mERROR   [0m Failed after [1;92m0:00:03[0m!
+Traceback (most recent calls WITHOUT Sacred internals):
+  File "pymarlzooplus/main.py", line 47, in my_main
+    run(_run, config, _log)
+  File "/home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/run.py", line 136, in run
+    run_sequential(args=args, logger=logger)
+  File "/home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/run.py", line 175, in run_sequential
+    runner = r_REGISTRY[args.runner](args=args, logger=logger)
+  File "/home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/episode_runner.py", line 27, in __init__
+    assert self.batch_size == 1
+AssertionError

@@ -1,0 +1,138 @@
+{
+  "artifacts": [],
+  "command": "my_main",
+  "experiment": {
+    "base_dir": "/home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus",
+    "dependencies": [
+      "numpy==1.24.4",
+      "PyYAML==6.0.3",
+      "sacred==0.8.7",
+      "torch==2.4.1"
+    ],
+    "mainfile": "main.py",
+    "name": "pymarlzooplus",
+    "repositories": [
+      {
+        "commit": "83fbcd9fa1d67410c07dd43062b0dd03cbe20e9c",
+        "dirty": true,
+        "url": "https://github.com/aparame/pymarlzooplus.git"
+      },
+      {
+        "commit": "83fbcd9fa1d67410c07dd43062b0dd03cbe20e9c",
+        "dirty": true,
+        "url": "https://github.com/aparame/pymarlzooplus.git"
+      },
+      {
+        "commit": "83fbcd9fa1d67410c07dd43062b0dd03cbe20e9c",
+        "dirty": true,
+        "url": "https://github.com/aparame/pymarlzooplus.git"
+      },
+      {
+        "commit": "83fbcd9fa1d67410c07dd43062b0dd03cbe20e9c",
+        "dirty": true,
+        "url": "https://github.com/aparame/pymarlzooplus.git"
+      },
+      {
+        "commit": "83fbcd9fa1d67410c07dd43062b0dd03cbe20e9c",
+        "dirty": true,
+        "url": "https://github.com/aparame/pymarlzooplus.git"
+      }
+    ],
+    "sources": [
+      [
+        "__init__.py",
+        "../../../../__init__.py"
+      ],
+      [
+        "main.py",
+        "../../../../main.py"
+      ],
+      [
+        "run.py",
+        "../../../../run.py"
+      ],
+      [
+        "utils/__init__.py",
+        "../../../../utils/__init__.py"
+      ],
+      [
+        "utils/logging_setup.py",
+        "../../../../utils/logging_setup.py"
+      ]
+    ]
+  },
+  "fail_trace": [
+    "Traceback (most recent call last):\n",
+    "  File \"/home/adi2440/anaconda3/envs/pymarlzooplus/lib/python3.8/site-packages/sacred/config/captured_function.py\", line 42, in captured_function\n    result = wrapped(*args, **kwargs)\n",
+    "  File \"pymarlzooplus/main.py\", line 47, in my_main\n    run(_run, config, _log)\n",
+    "  File \"/home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/run.py\", line 136, in run\n    run_sequential(args=args, logger=logger)\n",
+    "  File \"/home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/run.py\", line 175, in run_sequential\n    runner = r_REGISTRY[args.runner](args=args, logger=logger)\n",
+    "  File \"/home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/episode_runner.py\", line 27, in __init__\n    assert self.batch_size == 1\n",
+    "AssertionError\n"
+  ],
+  "heartbeat": "2025-11-21T19:34:05.346358",
+  "host": {
+    "ENV": {},
+    "cpu": "12th Gen Intel(R) Core(TM) i9-12900KF",
+    "gpus": {
+      "driver_version": "580.95.05",
+      "gpus": [
+        {
+          "model": "NVIDIA GeForce RTX 3080 Ti",
+          "persistence_mode": false,
+          "total_memory": 12288
+        }
+      ]
+    },
+    "hostname": "administrator-Alienware-Aurora-R13",
+    "os": [
+      "Linux",
+      "Linux-5.15.0-161-lowlatency-x86_64-with-glibc2.17"
+    ],
+    "python_version": "3.8.18"
+  },
+  "meta": {
+    "command": "my_main",
+    "config_updates": {
+      "env_args": {
+        "key": "rware:rware-tiny-2ag-v1",
+        "time_limit": 500
+      }
+    },
+    "named_configs": [],
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--id": null,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [
+        "env_args.time_limit=500",
+        "env_args.key=rware:rware-tiny-2ag-v1"
+      ],
+      "help": false,
+      "with": true
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2025-11-21T19:34:01.924421",
+  "status": "FAILED",
+  "stop_time": "2025-11-21T19:34:05.347052"
+}
