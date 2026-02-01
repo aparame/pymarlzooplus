@@ -85,6 +85,26 @@ Before installing PyMARLzoo+, we recommend creating a conda environment:
 conda create -y -n pymarlzooplus python=3.8.18
 conda activate pymarlzooplus
 ```
+- To install and use PyMARLzoo+ as a package, run the following commands:
+  ```sh
+  pip install pymarlzooplus
+  ```
+
+
+- To build it from source, run the following commands:
+  ```sh
+  git clone https://github.com/AILabDsUnipi/pymarlzooplus.git
+  cd pymarlzooplus 
+  pip install -e .
+  ``` 
+
+Note that before running an atari environment (from PettingZoo) for the first time, you have to run: 
+  ```sh
+  AutoROM -y
+  ```
+
+
+
 
 ## Weights & Biases (optional)
 
@@ -135,23 +155,6 @@ Notes:
 - Scalar metrics already logged through the project's `Logger` will also be forwarded to W&B automatically when enabled.
 
 
-- To install and use PyMARLzoo+ as a package, run the following commands:
-  ```sh
-  pip install pymarlzooplus
-  ```
-
-
-- To build it from source, run the following commands:
-  ```sh
-  git clone https://github.com/AILabDsUnipi/pymarlzooplus.git
-  cd pymarlzooplus 
-  pip install -e .
-  ``` 
-
-Note that before running an atari environment (from PettingZoo) for the first time, you have to run: 
-  ```sh
-  AutoROM -y
-  ```
 
 
 ## Using Docker
