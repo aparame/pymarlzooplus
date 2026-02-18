@@ -1,0 +1,314 @@
+[02/17/26 19:32:25] INFO     Running command 'my_main'                                     
+                    INFO     Started run with ID "3"                                       
+                    INFO     Saving to FileStorageObserver in                              
+                             '/home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarl
+                             zooplus/results/sacred/vdn/rware:rware-tiny-2ag-easy-v2/3'    
+                    INFO     Experiment Parameters:                                        
+                    INFO     {   'action_selector': 'epsilon_greedy',                      
+                                 'action_selector_strategy': 'basic_selector_strategy',    
+                                 'add_value_last_step': True,                              
+                                 'agent': 'rnn',                                           
+                                 'agent_output_type': 'q',                                 
+                                 'batch_size': 128,                                        
+                                 'batch_size_run': 1,                                      
+                                 'buffer_cpu_only': True,                                  
+                                 'buffer_size': 5000,                                      
+                                 'checkpoint_path':                                        
+                             '/home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarl
+                             zooplus/results/sacred/vdn/rware:rware-tiny-2ag-easy-v2/sub/mo
+                             dels/',                                                       
+                                 'cnn_features_dim': 128,                                  
+                                 'double_q': True,                                         
+                                 'env': 'gymma',                                           
+                                 'env_args': {   'key': 'rware:rware-tiny-2ag-easy-v2',    
+                                                 'render': True,                           
+                                                 'seed': 280987649,                        
+                                                 'time_limit': 110},                       
+                                 'epsilon_anneal_time': 50000,                             
+                                 'epsilon_finish': 0.05,                                   
+                                 'epsilon_start': 1.0,                                     
+                                 'evaluate': True,                                         
+                                 'evaluation_epsilon': 0.0,                                
+                                 'explorer': None,                                         
+                                 'extra_in_buffer': [   ],                                 
+                                 'gamma': 0.99,                                            
+                                 'grad_norm_clip': 10,                                     
+                                 'has_explorer': False,                                    
+                                 'hidden_dim': 64,                                         
+                                 'hypergroup': None,                                       
+                                 'label': 'default_label',                                 
+                                 'learner': 'q_learner',                                   
+                                 'learner_log_interval': 10000,                            
+                                 'load_step': 0,                                           
+                                 'local_results_path': 'results',                          
+                                 'log_interval': 50000,                                    
+                                 'lr': 0.0003,                                             
+                                 'mac': 'basic_mac',                                       
+                                 'mixer': 'vdn',                                           
+                                 'name': 'vdn',                                            
+                                 'num_circle': 1,                                          
+                                 'obs_agent_id': True,                                     
+                                 'obs_individual_obs': False,                              
+                                 'obs_last_action': True,                                  
+                                 'optim_alpha': 0.99,                                      
+                                 'optim_eps': 0.0001,                                      
+                                 'prioritized_buffer': False,                              
+                                 'prioritized_buffer_alpha': 0.6,                          
+                                 'render': True,                                           
+                                 'repeat_id': 1,                                           
+                                 'runner': 'episode',                                      
+                                 'runner_log_interval': 10000,                             
+                                 'save_data': True,                                        
+                                 'save_model': True,                                       
+                                 'save_model_interval': 500000,                            
+                                 'save_replay': False,                                     
+                                 'seed': 280987649,                                        
+                                 'standardise_returns': False,                             
+                                 'standardise_rewards': True,                              
+                                 't_max': 15000000,                                        
+                                 'target_update_interval_or_tau': 200,                     
+                                 'test_greedy': True,                                      
+                                 'test_interval': 50000,                                   
+                                 'test_nepisode': 100,                                     
+                                 'use_cuda': True,                                         
+                                 'use_cuda_cnn_modules': True,                             
+                                 'use_rnn': True,                                          
+                                 'use_tensorboard': False,                                 
+                                 'wandb': {   'enable': False,                             
+                                              'entity': 'i2rLAB',                          
+                                              'id': None,                                  
+                                              'notes': '',                                 
+                                              'project': 'VLCM_Phase1',                    
+                                              'resume': False,                             
+                                              'run_name': None,                            
+                                              'save_dir': 'results/wandb',                 
+                                              'sync_tensorboard': False,                   
+                                              'tags': [   ]}}                              
+                                                                                           
+[02/17/26 19:32:26] INFO     Loading model from                                            
+                             /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlz
+                             ooplus/results/sacred/vdn/rware:rware-tiny-2ag-easy-v2/sub/mod
+                             els/10001310                                                  
+/home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/controllers/basic_controller.py:86: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.agent.load_state_dict(th.load("{}/agent.th".format(path), map_location=lambda storage, loc: storage))
+/home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/learners/q_learner.py:180: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.mixer.load_state_dict(th.load("{}/mixer.th".format(path), map_location=lambda storage, loc: storage))
+/home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/learners/q_learner.py:181: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.optimiser.load_state_dict(th.load("{}/opt.th".format(path), map_location=lambda storage, loc: storage))
+Episode return: 3.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193231_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193234_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193238_success.json
+Episode return: 3.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193242_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193245_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193249_success.json
+Episode return: 3.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193253_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193256_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193300_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193304_success.json
+Episode return: 3.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193307_success.json
+Episode return: 3.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193311_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193315_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193318_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193322_success.json
+Episode return: 3.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193326_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193329_success.json
+Episode return: 3.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193333_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193337_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193341_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193344_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193348_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193352_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193355_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193359_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193403_success.json
+Episode return: 3.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193407_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193410_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193414_success.json
+Episode return: 3.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193418_success.json
+Episode return: 3.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193421_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193425_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193429_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193432_success.json
+Episode return: 3.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193436_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193440_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193444_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193447_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193451_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193455_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193458_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193502_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193506_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193509_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193513_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193517_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193520_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193524_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193528_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193531_success.json
+Episode return: 4.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193535_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193539_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193543_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193546_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193550_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193554_success.json
+Episode return: 3.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193557_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193601_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193605_success.json
+Episode return: 3.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193608_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193612_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193616_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193620_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193623_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193627_success.json
+Episode return: 3.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193631_success.json
+Episode return: 3.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193634_success.json
+Episode return: 3.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193638_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193642_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193645_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193649_success.json
+Episode return: 3.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193653_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193657_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193700_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193704_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193708_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193711_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193715_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193719_success.json
+Episode return: 3.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193722_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193726_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193730_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193733_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193737_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193741_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193744_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193748_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193752_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193756_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193759_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193803_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193807_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193810_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193814_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193818_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193821_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193825_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193829_success.json
+Episode return: 3.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193833_success.json
+Episode return: 2.0
+Saved trajectory to /home/adi2440/Desktop/MARL_Shahil_Aditya/pymarlzooplus/pymarlzooplus/runners/../../results/vdn/rware:rware-tiny-2ag-easy-v2/2026-02-17/trajectory_193836_success.json
+╭─────────────── Recent Stats  |  t_env: 10,001,310  |  Episode: 10001310 ────────────────╮
+│ ┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━┓                            │
+│ ┃ Metric              ┃     Mean ┃    Std ┃ Average Window ┃                            │
+│ ┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━┩                            │
+│ │ test_ep_length_mean │ 110.0000 │ 0.0000 │              5 │                            │
+│ │ test_return_mean    │   2.2100 │ 0.0000 │              5 │                            │
+│ │ test_return_std     │   0.4312 │ 0.0000 │              5 │                            │
+│ └─────────────────────┴──────────┴────────┴────────────────┘                            │
+╰─────────────────────────────────────────────────────────────────────────────────────────╯
+[02/17/26 19:38:36] INFO     Finished Evaluation                                           
+[02/17/26 19:38:46] INFO     Creating plots ...                                            
+[02/17/26 19:38:47] INFO     Exiting Main                                                  
+                    INFO     Stopping all threads                                          
+                    INFO     Thread Thread-1 is alive! Is daemon: False                    
+[02/17/26 19:38:49] INFO     Thread Thread-1 did not terminate.                            
+                    INFO     Exiting script                                                
+                    INFO     Completed after 0:06:24                                       

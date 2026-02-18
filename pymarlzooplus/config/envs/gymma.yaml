@@ -2,11 +2,11 @@ env: "gymma"
 
 env_args:
   key: null
-  time_limit: 110  # Episode horizon
+  time_limit: 50  # Episode horizon
   render: True
 
 test_greedy: True
-test_nepisode: 100
+test_nepisode: 50
 test_interval: 50000
 log_interval: 50000
 runner_log_interval: 10000

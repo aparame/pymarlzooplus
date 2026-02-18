@@ -1,0 +1,10 @@
+{"time":"2026-01-28T15:04:46.766040103-05:00","level":"INFO","msg":"stream: starting","core version":"0.23.0"}
+{"time":"2026-01-28T15:04:46.965933888-05:00","level":"INFO","msg":"stream: created new stream","id":"zuxq0ric"}
+{"time":"2026-01-28T15:04:46.965989159-05:00","level":"INFO","msg":"handler: started","stream_id":"zuxq0ric"}
+{"time":"2026-01-28T15:04:46.966013509-05:00","level":"INFO","msg":"stream: started","id":"zuxq0ric"}
+{"time":"2026-01-28T15:04:46.966026678-05:00","level":"INFO","msg":"writer: started","stream_id":"zuxq0ric"}
+{"time":"2026-01-28T15:04:46.966034707-05:00","level":"INFO","msg":"sender: started","stream_id":"zuxq0ric"}
+{"time":"2026-01-28T18:57:32.520856285-05:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/i2rLAB/VLCM_Phase1/zuxq0ric/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2026-01-29T07:35:32.892809423-05:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2026-01-29T12:25:18.135960143-05:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2026-01-29T13:06:44.279479005-05:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/i2rLAB/VLCM_Phase1/zuxq0ric/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}

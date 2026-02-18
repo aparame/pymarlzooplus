@@ -1,0 +1,1692 @@
+{
+    "metadata": {
+        "env": "rware:rware-tiny-2ag-v2",
+        "grid_size": [
+            11,
+            10
+        ],
+        "total_steps": 15000000,
+        "success": true,
+        "total_reward": 0.0
+    },
+    "initial_state": {
+        "shelves": [
+            {
+                "id": 1,
+                "x": 1,
+                "y": 1
+            },
+            {
+                "id": 2,
+                "x": 2,
+                "y": 1
+            },
+            {
+                "id": 3,
+                "x": 7,
+                "y": 1
+            },
+            {
+                "id": 4,
+                "x": 8,
+                "y": 1
+            },
+            {
+                "id": 5,
+                "x": 1,
+                "y": 2
+            },
+            {
+                "id": 6,
+                "x": 2,
+                "y": 2
+            },
+            {
+                "id": 7,
+                "x": 7,
+                "y": 2
+            },
+            {
+                "id": 8,
+                "x": 8,
+                "y": 2
+            },
+            {
+                "id": 9,
+                "x": 1,
+                "y": 3
+            },
+            {
+                "id": 10,
+                "x": 2,
+                "y": 3
+            },
+            {
+                "id": 11,
+                "x": 7,
+                "y": 3
+            },
+            {
+                "id": 12,
+                "x": 8,
+                "y": 3
+            },
+            {
+                "id": 13,
+                "x": 1,
+                "y": 4
+            },
+            {
+                "id": 14,
+                "x": 2,
+                "y": 4
+            },
+            {
+                "id": 15,
+                "x": 7,
+                "y": 4
+            },
+            {
+                "id": 16,
+                "x": 8,
+                "y": 4
+            },
+            {
+                "id": 17,
+                "x": 1,
+                "y": 5
+            },
+            {
+                "id": 18,
+                "x": 2,
+                "y": 5
+            },
+            {
+                "id": 19,
+                "x": 7,
+                "y": 5
+            },
+            {
+                "id": 20,
+                "x": 8,
+                "y": 5
+            },
+            {
+                "id": 21,
+                "x": 1,
+                "y": 6
+            },
+            {
+                "id": 22,
+                "x": 2,
+                "y": 6
+            },
+            {
+                "id": 23,
+                "x": 7,
+                "y": 6
+            },
+            {
+                "id": 24,
+                "x": 8,
+                "y": 6
+            },
+            {
+                "id": 25,
+                "x": 1,
+                "y": 7
+            },
+            {
+                "id": 26,
+                "x": 2,
+                "y": 7
+            },
+            {
+                "id": 27,
+                "x": 7,
+                "y": 7
+            },
+            {
+                "id": 28,
+                "x": 8,
+                "y": 7
+            },
+            {
+                "id": 29,
+                "x": 1,
+                "y": 8
+            },
+            {
+                "id": 30,
+                "x": 2,
+                "y": 8
+            },
+            {
+                "id": 31,
+                "x": 7,
+                "y": 8
+            },
+            {
+                "id": 32,
+                "x": 8,
+                "y": 8
+            }
+        ],
+        "agents": [
+            {
+                "id": 1,
+                "start_x": 7,
+                "start_y": 2,
+                "color": "blue"
+            },
+            {
+                "id": 2,
+                "start_x": 3,
+                "start_y": 9,
+                "color": "red"
+            }
+        ]
+    },
+    "trajectory": [
+        {
+            "step": 1,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "LEFT",
+                    "pos": [
+                        7,
+                        2
+                    ],
+                    "dir": "EAST",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        3,
+                        9
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 2,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        2
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        9
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 3,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_LOAD",
+                    "pos": [
+                        7,
+                        1
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        3,
+                        8
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 4,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        1
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        3,
+                        8
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 5,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_LOAD",
+                    "pos": [
+                        7,
+                        1
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        2,
+                        8
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 6,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        1
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "TOGGLE_LOAD",
+                    "pos": [
+                        1,
+                        8
+                    ],
+                    "dir": "WEST",
+                    "carrying": null
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 7,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_LOAD",
+                    "pos": [
+                        7,
+                        1
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        1,
+                        8
+                    ],
+                    "dir": "WEST",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 8,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        1
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        0,
+                        8
+                    ],
+                    "dir": "WEST",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 9,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_LOAD",
+                    "pos": [
+                        7,
+                        1
+                    ],
+                    "dir": "NORTH",
+                    "carrying": null
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        0,
+                        8
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 10,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        1
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "FORWARD",
+                    "pos": [
+                        0,
+                        9
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 11,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 12,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "EAST",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 13,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "EAST",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 14,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 15,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "EAST",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 16,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "EAST",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 17,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 18,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "EAST",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 19,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 20,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "EAST",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 21,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "FORWARD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 22,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "EAST",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 23,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 24,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "EAST",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 25,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 26,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "EAST",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 27,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 28,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "EAST",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 29,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 30,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "LEFT",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "NORTH",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "EAST",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 31,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "WEST",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 32,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "WEST",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "EAST",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 33,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "WEST",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 34,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "WEST",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "EAST",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 35,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "WEST",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 36,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "WEST",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "EAST",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 37,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "WEST",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 38,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "WEST",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "EAST",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 39,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "WEST",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 40,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "WEST",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "EAST",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 41,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "WEST",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 42,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "WEST",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "EAST",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 43,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "WEST",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 44,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "WEST",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "EAST",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 45,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "WEST",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 46,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "WEST",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "EAST",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 47,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "NOOP",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "WEST",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 48,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "WEST",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "EAST",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 49,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "NOOP",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "WEST",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "LEFT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "SOUTH",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        },
+        {
+            "step": 50,
+            "requests": [
+                3,
+                29
+            ],
+            "agents": [
+                {
+                    "id": 1,
+                    "action": "TOGGLE_UNLOAD",
+                    "pos": [
+                        7,
+                        0
+                    ],
+                    "dir": "WEST",
+                    "carrying": 3
+                },
+                {
+                    "id": 2,
+                    "action": "RIGHT",
+                    "pos": [
+                        0,
+                        10
+                    ],
+                    "dir": "EAST",
+                    "carrying": 29
+                }
+            ],
+            "reward": 0.0
+        }
+    ]
+}
