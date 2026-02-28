@@ -176,7 +176,7 @@ def main():
     parser.add_argument(
         "--fps",
         type=int,
-        default=2,
+        default=1,
         help="Playback speed (frames per step). Default 2.",
     )
     parser.add_argument(

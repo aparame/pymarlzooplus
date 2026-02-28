@@ -6,7 +6,7 @@ env_args:
   render: True
 
 test_greedy: True
-test_nepisode: 50
+test_nepisode: 10
 test_interval: 50000
 log_interval: 50000
 runner_log_interval: 10000
